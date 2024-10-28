@@ -1,0 +1,12 @@
+{
+  "home": {
+      "helloWorld": "Bonjour tout le monde !"
+  },
+  "faq": {
+      "aboutText": "Ceci est un site statique complètement traduit."
+  },
+  "contact": {
+      "home": "Accueil",
+      "about": "A propos"
+  }
+}
