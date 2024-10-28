@@ -34,7 +34,7 @@ export function HeaderSimple() {
   return (
     <header className={classes.header}>
       <Container size="lg" className={classes.inner}>
-        <Box size={28}>STAC</Box>
+        <Box size={28}></Box>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
