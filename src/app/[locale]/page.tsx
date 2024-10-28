@@ -16,13 +16,10 @@ import {
 import { useTranslations } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 
-export default function Home({
-  params: { locale },
-}: {
+type PageProps = {
   params: { locale: string };
-}) {
-  // setRequestLocale(locale);
-  const t = useTranslations("HomePage");
+};
+export default function Page({ params: { locale } }: PageProps) {
   return (
     <Stack gap={0}>
       <HeroImageRight />

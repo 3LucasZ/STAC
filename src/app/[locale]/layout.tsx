@@ -9,7 +9,6 @@ import { Notifications } from "@mantine/notifications";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 import { NextIntlClientProvider } from "next-intl";
-import { routing } from "@/i18n/routing";
 
 type Props = {
   children: ReactNode;
@@ -33,7 +32,7 @@ async function getMessages(locale: string) {
 
 //function to generate the routes for all the locales
 export async function generateStaticParams() {
-  return routing.locales.map((locale) => ({ locale }));
+  return ["en", "zh"].map((locale) => ({ locale }));
 }
 
 export default async function RootLayout({
@@ -41,11 +40,12 @@ export default async function RootLayout({
   params: { locale },
 }: Props) {
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!["en", "zh"].includes(locale as any)) {
     notFound();
   }
 
   const messages = await getMessages(locale);
+  console.log(messages);
 
   return (
     <html lang={locale}>
@@ -55,9 +55,7 @@ export default async function RootLayout({
       <body>
         <MantineProvider>
           <Notifications />
-          <NextIntlClientProvider locale={locale} messages={messages}>
-            <Layout>{children}</Layout>
-          </NextIntlClientProvider>
+          <Layout>{children}</Layout>
         </MantineProvider>
       </body>
     </html>
