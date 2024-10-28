@@ -36,9 +36,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <head>
-        <ColorSchemeScript />
-      </head>
+      <head>{/* <ColorSchemeScript /> */}</head>
       <body>
         <MantineProvider>
           <Notifications />
