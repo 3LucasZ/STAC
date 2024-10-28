@@ -3,20 +3,22 @@ import { Container, Group, Box, Burger, Text } from "@mantine/core";
 import classes from "./HeaderSimple.module.css";
 import { usePathname, useRouter } from "next/navigation";
 import { useDisclosure } from "@mantine/hooks";
-
-const preLinks = [
-  { link: "/", label: "About Us" },
-  { link: "/apply", label: "Apply" },
-  { link: "/service", label: "Service" },
-  { link: "/partners", label: "Partners" },
-  { link: "/contact", label: "Contact Us" },
-  { link: "/faq", label: "FAQ" },
-];
+import { Translator } from "@/utils";
+import data from "./data.json";
 
 type HeaderSimpleProps = {
   locale: string;
 };
 export function HeaderSimple({ locale }: HeaderSimpleProps) {
+  const t = new Translator(locale);
+  const preLinks = [
+    { link: "/", label: t.get(data.aboutUs) },
+    { link: "/apply", label: "Apply" },
+    { link: "/service", label: "Service" },
+    { link: "/partners", label: "Partners" },
+    { link: "/contact", label: t.get(data.contactUs) },
+    { link: "/faq", label: t.get(data.faq) },
+  ];
   const links = preLinks.map((link) => {
     return {
       link: "/" + locale + link.link,
@@ -50,7 +52,9 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
       ? pathname.replace("en", "zh")
       : pathname.replace("zh", "en");
   const languagePicker = (
-    <Text onClick={() => router.replace(newPathname)}>{locale}</Text>
+    <Text onClick={() => router.replace(newPathname)} c={"blue"}>
+      {locale == "en" ? "English" : "中文"}
+    </Text>
   );
 
   return (

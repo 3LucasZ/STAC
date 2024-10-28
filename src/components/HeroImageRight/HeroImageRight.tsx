@@ -4,9 +4,11 @@ import classes from "./HeroImageRight.module.css";
 export function HeroImageRight({
   title,
   subtitle,
+  actionBtnText,
 }: {
   title: string;
   subtitle: string;
+  actionBtnText: string;
 }) {
   return (
     <div className={classes.root}>
@@ -37,7 +39,7 @@ export function HeroImageRight({
               className={classes.control}
               mt={40}
             >
-              Book Now
+              {actionBtnText}
             </Button>
           </div>
         </div>

@@ -6,5 +6,9 @@
   "subtitle": {
     "en": "Made Easy",
     "zh": "變得簡單"
+  },
+  "actionBtnText": {
+    "en": "Book Now",
+    "zh": "立即預訂"
   }
 }

@@ -28,6 +28,7 @@ export default function Page({ params: { locale } }: PageProps) {
       <HeroImageRight
         title={t.get(data.title)}
         subtitle={t.get(data.subtitle)}
+        actionBtnText={t.get(data.actionBtnText)}
       />
       <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" />
       <Container>
