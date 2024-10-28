@@ -12,10 +12,12 @@ import {
   SimpleGrid,
   Image,
   Container,
+  Center,
 } from "@mantine/core";
 
 import data from "./data.json";
 import { Translator } from "@/utils";
+import Image360 from "@/components/Image360";
 
 type PageProps = {
   params: { locale: string };
@@ -31,6 +33,12 @@ export default function Page({ params: { locale } }: PageProps) {
         actionBtnText={t.get(data.actionBtnText)}
       />
       <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" />
+      <Center>
+        <Box w={"80vw"}>
+          <Image360 url="/STAC/images/360-interior.jpg" />
+        </Box>
+      </Center>
+
       <Container>
         <Text>
           The Student Transit Assist Center (known as STAC) is located in San

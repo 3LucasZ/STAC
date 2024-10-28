@@ -26,11 +26,6 @@ export function HeroImageRight({
                 {subtitle}
               </Text>{" "}
             </Title>
-
-            {/* <Text className={classes.description} mt={30}>
-              We aim to bring
-            </Text> */}
-
             <Button
               variant="gradient"
               gradient={{ from: "pink", to: "yellow" }}
