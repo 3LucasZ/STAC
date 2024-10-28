@@ -36,7 +36,6 @@ export default async function RootLayout({
   // Ensure that the incoming `locale` is valid
   if (!["en", "zh"].includes(locale as any)) {
     notFound();
-  } else {
     console.log("requested locale not found");
   }
 
@@ -52,7 +51,7 @@ export default async function RootLayout({
       <body>
         <MantineProvider>
           <Notifications />
-          <Layout>{children}</Layout>
+          <Layout locale={locale}>{children}</Layout>
         </MantineProvider>
       </body>
     </html>

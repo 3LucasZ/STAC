@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Container, Group, Box } from "@mantine/core";
+import { Container, Group, Box, Burger } from "@mantine/core";
 import classes from "./HeaderSimple.module.css";
 import { useRouter } from "next/navigation";
+import { useDisclosure } from "@mantine/hooks";
 
-const links = [
+const preLinks = [
   { link: "/", label: "About Us" },
   { link: "/apply", label: "Apply" },
   { link: "/service", label: "Service" },
@@ -12,7 +13,17 @@ const links = [
   { link: "/faq", label: "FAQ" },
 ];
 
-export function HeaderSimple() {
+type HeaderSimpleProps = {
+  locale: string;
+};
+export function HeaderSimple({ locale }: HeaderSimpleProps) {
+  const links = preLinks.map((link) => {
+    return {
+      link: "/" + locale + link.link,
+      label: link.label,
+    };
+  });
+  const [opened, { toggle }] = useDisclosure(false);
   const [active, setActive] = useState(links[0].link);
   const router = useRouter();
 
@@ -34,11 +45,13 @@ export function HeaderSimple() {
 
   return (
     <header className={classes.header}>
-      <Container size="lg" className={classes.inner}>
+      <Container size="md" className={classes.inner}>
         <Box size={28}></Box>
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>
+
+        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
     </header>
   );
