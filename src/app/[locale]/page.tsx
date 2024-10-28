@@ -15,18 +15,19 @@ import {
 } from "@mantine/core";
 
 import data from "./data.json";
-import { translate } from "@/utils";
+import { Translator } from "@/utils";
 
 type PageProps = {
   params: { locale: string };
 };
 
 export default function Page({ params: { locale } }: PageProps) {
+  const t = new Translator(locale);
   return (
     <Stack gap={0}>
       <HeroImageRight
-        title={translate(data.title, locale)}
-        subtitle={translate(data.subtitle, locale)}
+        title={t.get(data.title)}
+        subtitle={t.get(data.subtitle)}
       />
       <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" />
       <Container>
