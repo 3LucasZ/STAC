@@ -8,7 +8,7 @@ export function HeroImageRight() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              Student Apartments,{" "}
+              Student Apartments{" "}
               <Text
                 component="span"
                 inherit
@@ -19,14 +19,15 @@ export function HeroImageRight() {
               </Text>{" "}
             </Title>
 
-            <Text className={classes.description} mt={30}>
+            {/* <Text className={classes.description} mt={30}>
               We aim to bring
-            </Text>
+            </Text> */}
 
             <Button
               variant="gradient"
               gradient={{ from: "pink", to: "yellow" }}
-              size="xl"
+              size="lg"
+              maw={300}
               className={classes.control}
               mt={40}
             >
