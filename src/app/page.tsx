@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <Stack gap={0}>
       <HeroImageRight />
-      <Image src="/images/logo.png" mah={400} w={"auto"} fit="contain" />
+      <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" />
       <Container>
         <Text>
           The Student Transit Assist Center (known as STAC) is located in San
@@ -42,6 +42,33 @@ export default function Home() {
           transition to school and dorm life.
         </Text>
       </Container>
+      <Container>
+        <Text>
+          High-quality, affordable private spaces where you can enjoy
+          comfortable accommodation: - Free public Wi-Fi - Breakfast is provided
+          on weekdays except on holidays - Monthly reports can be requested by
+          parents. - Fully furnished - Kitchen, dining room, and laundry
+          facilities are communal - Own Refrigerator - Air conditioning - Key
+          card access Single rooms: one twin XL bed, Each bathroom is shared by
+          only two students. Bunk beds room: Two beds at top bunk and lower
+          bunk, shared bathroom. 2 Queen Room: Two queen size beds with own
+          bathroom King Room: One king size beds with own bathroom One bed room
+          suite with kitchenette and own bathroom Prices vary based on the type
+          of room. Please check for the price and availability. The demand for
+          the dormitory is extremely high in Silica Valley Area. Space at STAC
+          is limited. Join US now!
+        </Text>
+      </Container>
+      <Title>Partners</Title>
+      <Text>
+        STAC Apartments are the officially recommended dormitories for DeAnza
+        College. We provide the most convenient and professional service
+        experience for our partners. With 24/7 service and security monitoring,
+        we significantly reduce the service load on partners for your students
+        after arriving in the U.S. Welcome to all educational agencies and
+        institutions for collaboration. We aim to become your long-term partner
+        in providing services for your students.
+      </Text>
       <Box h={200}></Box>
     </Stack>
   );

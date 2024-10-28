@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 const links = [
   { link: "/", label: "About Us" },
+  { link: "/apply", label: "Apply" },
   { link: "/service", label: "Service" },
   { link: "/partners", label: "Partners" },
   { link: "/contact", label: "Contact Us" },
