@@ -8,6 +8,7 @@ import Layout from "@/components/Layout";
 import { Notifications } from "@mantine/notifications";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 type Props = {
   children: ReactNode;
@@ -42,6 +43,7 @@ export default async function RootLayout({
           <Notifications />
           <Layout locale={locale}>{children}</Layout>
         </MantineProvider>
+        <GoogleAnalytics gaId="G-HMXZF1HKM6" />
       </body>
     </html>
   );
