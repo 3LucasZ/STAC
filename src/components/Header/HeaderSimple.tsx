@@ -1,5 +1,14 @@
 import { useState } from "react";
-import { Container, Group, Box, Burger, Text } from "@mantine/core";
+import {
+  Container,
+  Group,
+  Box,
+  Burger,
+  Text,
+  Drawer,
+  Image,
+  Stack,
+} from "@mantine/core";
 import classes from "./HeaderSimple.module.css";
 import { usePathname, useRouter } from "next/navigation";
 import { useDisclosure } from "@mantine/hooks";
@@ -28,7 +37,6 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
 
   const router = useRouter();
   const pathname = usePathname();
-  console.log(pathname);
 
   const [opened, { toggle }] = useDisclosure(false);
 
@@ -40,7 +48,7 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
       data-active={pathname === link.link || undefined}
       onClick={(event) => {
         event.preventDefault();
-        router.replace(link.link);
+        router.push(link.link);
       }}
     >
       {link.label}
@@ -52,7 +60,7 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
       ? pathname.replace("en", "zh")
       : pathname.replace("zh", "en");
   const languagePicker = (
-    <Text onClick={() => router.replace(newPathname)} c={"blue"}>
+    <Text onClick={() => router.push(newPathname)} c={"blue"}>
       {locale == "en" ? "English" : "中文"}
     </Text>
   );
@@ -60,13 +68,27 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        <Box size={28}></Box>
+        {/* <Box size={28}></Box> */}
+        <Image h={40} src={"/STAC/images/mini-logo.png"} />
         <Group gap={5} visibleFrom="xs">
           {items}
-          {languagePicker}
         </Group>
-        <Burger opened={opened} onClick={toggle} hiddenFrom="xs" size="sm" />
+        <Box visibleFrom="xs">{languagePicker}</Box>
+        <Burger opened={false} onClick={toggle} hiddenFrom="xs" size="sm" />
       </Container>
+      <Drawer
+        opened={opened}
+        onClose={toggle}
+        position={"right"}
+        offset={8}
+        radius={"md"}
+        size={"sm"}
+      >
+        <Stack>
+          {items}
+          <Box p={8}>{languagePicker}</Box>
+        </Stack>
+      </Drawer>
     </header>
   );
 }
