@@ -1,6 +1,10 @@
 "use client";
-import { FaqSimple } from "@/components/FAQ/FaqSimple";
+import { FaqSimple } from "@/app/[locale]/faq/FaqSimple";
 
-export default function Home() {
-  return <FaqSimple />;
+export default function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  return <FaqSimple locale={locale} />;
 }
