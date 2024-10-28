@@ -1,21 +1,27 @@
 import { Container, Title, Text, Button } from "@mantine/core";
 import classes from "./HeroImageRight.module.css";
 
-export function HeroImageRight() {
+export function HeroImageRight({
+  title,
+  subtitle,
+}: {
+  title: string;
+  subtitle: string;
+}) {
   return (
     <div className={classes.root}>
       <Container size="lg">
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              Student Apartments{" "}
+              {title}{" "}
               <Text
                 component="span"
                 inherit
                 variant="gradient"
                 gradient={{ from: "pink", to: "yellow" }}
               >
-                Made Simple
+                {subtitle}
               </Text>{" "}
             </Title>
 

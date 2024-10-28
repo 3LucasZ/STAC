@@ -19,11 +19,6 @@ export const metadata = {
   description: "Student Apartments",
 };
 
-//function to get the translations
-async function getMessages(locale: string) {
-  return (await import(`../../../messages/${locale}.json`)).default;
-}
-
 //function to generate the routes for all the locales
 export async function generateStaticParams() {
   return ["en", "zh"].map((locale) => ({ locale }));
@@ -35,13 +30,9 @@ export default async function RootLayout({
 }: Props) {
   // Ensure that the incoming `locale` is valid
   if (!["en", "zh"].includes(locale as any)) {
-    notFound();
     console.log("requested locale not found");
+    notFound();
   }
-
-  // Get messages json
-  const messages = await getMessages(locale);
-  console.log(messages);
 
   return (
     <html lang={locale}>

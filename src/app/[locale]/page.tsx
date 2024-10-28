@@ -14,6 +14,9 @@ import {
   Container,
 } from "@mantine/core";
 
+import data from "./data.json";
+import { translate } from "@/utils";
+
 type PageProps = {
   params: { locale: string };
 };
@@ -21,7 +24,10 @@ type PageProps = {
 export default function Page({ params: { locale } }: PageProps) {
   return (
     <Stack gap={0}>
-      <HeroImageRight />
+      <HeroImageRight
+        title={translate(data.title, locale)}
+        subtitle={translate(data.subtitle, locale)}
+      />
       <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" />
       <Container>
         <Text>
