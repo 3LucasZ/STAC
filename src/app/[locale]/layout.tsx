@@ -8,7 +8,6 @@ import Layout from "@/components/Layout";
 import { Notifications } from "@mantine/notifications";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
-import { NextIntlClientProvider } from "next-intl";
 
 type Props = {
   children: ReactNode;
@@ -22,12 +21,7 @@ export const metadata = {
 
 //function to get the translations
 async function getMessages(locale: string) {
-  try {
-    return (await import(`../../../messages/${locale}.json`)).default;
-  } catch (error) {
-    console.log(error);
-    notFound();
-  }
+  return (await import(`../../../messages/${locale}.json`)).default;
 }
 
 //function to generate the routes for all the locales
@@ -42,8 +36,11 @@ export default async function RootLayout({
   // Ensure that the incoming `locale` is valid
   if (!["en", "zh"].includes(locale as any)) {
     notFound();
+  } else {
+    console.log("requested locale not found");
   }
 
+  // Get messages json
   const messages = await getMessages(locale);
   console.log(messages);
 

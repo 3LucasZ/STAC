@@ -13,12 +13,11 @@ import {
   Image,
   Container,
 } from "@mantine/core";
-import { useTranslations } from "next-intl";
-import { setRequestLocale } from "next-intl/server";
 
 type PageProps = {
   params: { locale: string };
 };
+
 export default function Page({ params: { locale } }: PageProps) {
   return (
     <Stack gap={0}>
