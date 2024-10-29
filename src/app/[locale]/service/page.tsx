@@ -10,8 +10,8 @@ export default function Home({
 }) {
   const t = new Translator(locale);
 
-  const checklist = data.services.map((item) => (
-    <List.Item>
+  const checklist = data.services.map((item, index) => (
+    <List.Item key={index}>
       <Text size="xl">{t.get(item)}</Text>
     </List.Item>
   ));

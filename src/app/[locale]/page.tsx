@@ -31,18 +31,18 @@ export default function Page({ params: { locale } }: PageProps) {
   const t = new Translator(locale);
 
   // luxuries
-  const luxuries = data.luxuries.map((luxury) => {
+  const luxuries = data.luxuries.map((luxury, index) => {
     return (
-      <List.Item>
+      <List.Item key={index}>
         <Text size="xl">{t.get(luxury)}</Text>
       </List.Item>
     );
   });
   const luxuriesWrapper = <List>{luxuries}</List>;
   // rooms
-  const rooms = data.rooms.map((room) => {
+  const rooms = data.rooms.map((room, index) => {
     return (
-      <List.Item>
+      <List.Item key={index}>
         <Text size="xl">{t.get(room)}</Text>
       </List.Item>
     );

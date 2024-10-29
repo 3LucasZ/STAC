@@ -28,7 +28,7 @@ export default function Home({
     </Anchor>
   );
   const checklist = data.checklist.map((item, index) => (
-    <List.Item>
+    <List.Item key={index}>
       <Text size="xl">{t.get(item)}</Text>
       {index == 0 && link1}
       {index == 5 && link2}
