@@ -23,8 +23,7 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
   const preLinks = [
     { link: "", label: t.get(data.aboutUs) },
     { link: "/apply", label: t.get(data.apply) },
-    { link: "/service", label: "Service" },
-    { link: "/partners", label: "Partners" },
+    { link: "/service", label: t.get(data.service) },
     { link: "/contact", label: t.get(data.contactUs) },
     { link: "/faq", label: t.get(data.faq) },
   ];

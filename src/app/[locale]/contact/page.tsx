@@ -1,11 +1,11 @@
 "use client";
 import { ContactUs } from "@/components/ContactUs/ContactUs";
-import { Stack } from "@mantine/core";
+import { Stack, Container } from "@mantine/core";
 
 export default function Home() {
   return (
-    <Stack gap={0}>
+    <Container pt={80}>
       <ContactUs></ContactUs>
-    </Stack>
+    </Container>
   );
 }

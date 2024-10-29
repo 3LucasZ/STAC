@@ -1,59 +1,54 @@
 "use client";
 import { ContactUs } from "@/components/ContactUs/ContactUs";
 import { List, Stack, Title, Text, Container, Anchor } from "@mantine/core";
-
-export default function Home() {
+import data from "./data.json";
+import { Translator } from "@/utils";
+export default function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  const t = new Translator(locale);
+  const link1 = (
+    <Anchor
+      size="xl"
+      href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
+      target="_blank"
+    >
+      {"(Download Link)"}
+    </Anchor>
+  );
+  const link2 = (
+    <Anchor
+      size="xl"
+      href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
+      target="_blank"
+    >
+      {"(Download Link)"}
+    </Anchor>
+  );
+  const checklist = data.checklist.map((item, index) => (
+    <List.Item>
+      <Text size="xl">{t.get(item)}</Text>
+      {index == 0 && link1}
+      {index == 5 && link2}
+    </List.Item>
+  ));
   return (
     <Stack>
-      <Title ta="center" py={20}>
+      <Title ta="center" py={20} c="blue">
         Dorm Applications
       </Title>
       <Container>
         <Stack>
-          <Text>
+          <Text size="xl">
             All application documents must be original or certified; no e-mail,
             scans or, copies will be accepted.
           </Text>
-          <Title order={3}>Application Checklist:</Title>
-          <List>
-            {" "}
-            <List.Item>
-              Complete, sign, and return this application form with a copy of
-              the photo page in your passport.{" "}
-              <Anchor
-                href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
-                target="_blank"
-              >
-                {"(Download Link)"}
-              </Anchor>
-            </List.Item>
-            <List.Item>
-              Attach a recent photograph to the application form.
-            </List.Item>
-            <List.Item>
-              Submit an original bank letter dated within the last 6 months with
-              an official signature on bank letterhead that verifies the current
-              balance in USD of your account or your sponsor's/guardian's
-              account.
-            </List.Item>
-            <List.Item>
-              Submit proof of medical insurance or travel insurance.
-            </List.Item>
-            <List.Item>
-              Submit the credit card authorization for the fees.
-            </List.Item>
-            <List.Item>
-              Submit this Parental Release form for a minor student along with
-              the refundable credit card authorization for the Guardianship
-              Service Charge (if you are under 18 years old).{" "}
-              <Anchor
-                href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
-                target="_blank"
-              >
-                {"(Download Link)"}
-              </Anchor>
-            </List.Item>
-          </List>
+          <Title order={3} c={"blue"}>
+            Application Checklist:
+          </Title>
+          <List>{checklist}</List>
         </Stack>
       </Container>
     </Stack>

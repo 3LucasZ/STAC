@@ -10,5 +10,57 @@
   "actionBtnText": {
     "en": "Apply Now",
     "zh": "立即預訂"
-  }
+  },
+  "luxuries": [
+    {
+      "en": "Free public Wi-Fi",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Breakfast is provided on weekdays (except on holidays)",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Monthly reports can be requested by parents",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Fully furnished",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Kitchen, dining room, and laundry facilities are communal",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Own Refrigerator",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Air conditioning",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Key card access",
+      "zh": "placeholder"
+    }
+  ],
+  "rooms": [
+    {
+      "en": "Single rooms: one twin XL bed, each bathroom is shared by only two students.",
+      "zh": "placeholder"
+    },
+    {
+      "en": "Bunk beds room: Two beds at top bunk and lower bunk, shared bathroom.",
+      "zh": "placeholder"
+    },
+    {
+      "en": "2 Queen Room: Two queen size beds with own bathroom",
+      "zh": "placeholder"
+    },
+    {
+      "en": "King Room: One king size beds with own bathroom One bed room suite with kitchenette and own bathroom",
+      "zh": "placeholder"
+    }
+  ]
 }
