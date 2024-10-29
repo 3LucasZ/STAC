@@ -21,8 +21,8 @@ type HeaderSimpleProps = {
 export function HeaderSimple({ locale }: HeaderSimpleProps) {
   const t = new Translator(locale);
   const preLinks = [
-    { link: "/", label: t.get(data.aboutUs) },
-    { link: "/apply", label: "Apply" },
+    { link: "", label: t.get(data.aboutUs) },
+    { link: "/apply", label: t.get(data.apply) },
     { link: "/service", label: "Service" },
     { link: "/partners", label: "Partners" },
     { link: "/contact", label: t.get(data.contactUs) },

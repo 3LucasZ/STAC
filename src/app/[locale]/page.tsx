@@ -1,5 +1,5 @@
 "use client";
-import { HeroImageRight } from "@/components/HeroImageRight/HeroImageRight";
+import { HeroImageRight } from "@/app/[locale]/HeroImageRight/HeroImageRight";
 import {
   Box,
   Stack,

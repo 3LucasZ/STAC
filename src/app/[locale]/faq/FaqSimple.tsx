@@ -1,4 +1,4 @@
-import { Container, Title, Accordion } from "@mantine/core";
+import { Container, Title, Accordion, Center } from "@mantine/core";
 import classes from "./FaqSimple.module.css";
 import { Translator } from "@/utils";
 import data from "./data.json";
@@ -12,12 +12,19 @@ export function FaqSimple({ locale }: { locale: string }) {
     </Accordion.Item>
   ));
   return (
-    <Container size="lg" className={classes.wrapper}>
+    <Container
+      size="lg"
+      className={classes.wrapper}
+      maw={{ base: "100%", xs: "90%", sm: "80%", md: "70%" }}
+    >
       <Title ta="center" className={classes.title}>
         Frequently Asked Questions
       </Title>
-
-      <Accordion variant="separated">{items}</Accordion>
+      <Center>
+        <Accordion variant="separated" miw={"100%"}>
+          {items}
+        </Accordion>
+      </Center>
     </Container>
   );
 }
