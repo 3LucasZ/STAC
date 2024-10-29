@@ -2,6 +2,7 @@
 
 import { Stack } from "@mantine/core";
 import { HeaderSimple } from "./Header/HeaderSimple";
+import { FooterLinks } from "./Footer/Footer";
 
 export default function Layout({
   locale,
@@ -11,9 +12,12 @@ export default function Layout({
   children: React.ReactNode;
 }) {
   return (
-    <Stack gap={0}>
+    <>
       <HeaderSimple locale={locale} />
-      {children}
-    </Stack>
+      <Stack gap={0} mih={"100vh"}>
+        {children}
+      </Stack>
+      <FooterLinks />
+    </>
   );
 }

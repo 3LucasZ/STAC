@@ -34,7 +34,7 @@ export default function Page({ params: { locale } }: PageProps) {
         subtitle={t.get(data.subtitle)}
         actionBtnText={t.get(data.actionBtnText)}
       />
-      <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" />
+      {/* <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" /> */}
       <Center>
         <Box w={"80vw"}>
           <Image360 url="/STAC/images/360-interior.jpg" />

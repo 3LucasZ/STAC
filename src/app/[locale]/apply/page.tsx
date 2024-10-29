@@ -1,6 +1,6 @@
 "use client";
 import { ContactUs } from "@/components/ContactUs/ContactUs";
-import { List, Stack, Title, Text, Container } from "@mantine/core";
+import { List, Stack, Title, Text, Container, Anchor } from "@mantine/core";
 
 export default function Home() {
   return (
@@ -19,7 +19,13 @@ export default function Home() {
             {" "}
             <List.Item>
               Complete, sign, and return this application form with a copy of
-              the photo page in your passport. (Download link)
+              the photo page in your passport.{" "}
+              <Anchor
+                href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
+                target="_blank"
+              >
+                {"(Download Link)"}
+              </Anchor>
             </List.Item>
             <List.Item>
               Attach a recent photograph to the application form.
@@ -37,13 +43,27 @@ export default function Home() {
               Submit the credit card authorization for the fees.
             </List.Item>
             <List.Item>
-              Submit the Parental Release Form for a minor student along with
+              Submit this Parental Release form for a minor student along with
               the refundable credit card authorization for the Guardianship
-              Service Charge (if you are under 18 years old). (Download link)
+              Service Charge (if you are under 18 years old).{" "}
+              <Anchor
+                href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
+                target="_blank"
+              >
+                {"(Download Link)"}
+              </Anchor>
             </List.Item>
           </List>
         </Stack>
       </Container>
     </Stack>
   );
+}
+{
+  /* <Anchor
+  href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
+  target="_blank"
+>
+  {" this Parental Release form "}
+</Anchor> */
 }
