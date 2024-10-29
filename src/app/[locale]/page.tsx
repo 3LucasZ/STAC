@@ -9,6 +9,7 @@ import {
   Container,
   Center,
 } from "@mantine/core";
+import { GoogleMapsEmbed } from "@next/third-parties/google";
 
 import data from "./data.json";
 import { Translator } from "@/utils";
@@ -39,7 +40,15 @@ export default function Page({ params: { locale } }: PageProps) {
           <Image360 url="/STAC/images/360-interior.jpg" />
         </Box>
       </Center>
-
+      <GoogleMapsEmbed
+        apiKey="AIzaSyBzhWjXgSpbwDRM5WZCjzky3kvyOFXW2Yw"
+        height={500}
+        width={500}
+        mode="place"
+        zoom="17"
+        center="37.2882,-121.9521"
+        q="Campbell+Community+Center"
+      />
       <Container>
         <Text>
           The Student Transit Assist Center (known as STAC) is located in San
