@@ -1,15 +1,10 @@
 "use client";
-import { ContactUs } from "@/components/ContactUs/ContactUs";
 import { HeroImageRight } from "@/components/HeroImageRight/HeroImageRight";
 import {
   Box,
-  Card,
-  Group,
   Stack,
   Title,
   Text,
-  Divider,
-  SimpleGrid,
   Image,
   Container,
   Center,
@@ -17,7 +12,13 @@ import {
 
 import data from "./data.json";
 import { Translator } from "@/utils";
-import Image360 from "@/components/Image360";
+import dynamic from "next/dynamic";
+const Image360 = dynamic(
+  () => import("@/components/Image360").then((mod) => mod.default),
+  {
+    ssr: false,
+  }
+);
 
 type PageProps = {
   params: { locale: string };
