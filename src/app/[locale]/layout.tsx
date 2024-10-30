@@ -2,6 +2,7 @@
 // All packages except `@mantine/hooks` require styles imports
 import "@mantine/core/styles.css";
 import "@mantine/notifications/styles.css";
+import "@mantine/carousel/styles.css";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import Layout from "@/components/Layout";
@@ -30,7 +31,7 @@ export default async function RootLayout({
   params: { locale },
 }: Props) {
   // Ensure that the incoming `locale` is valid
-  if (!["en", "zh"].includes(locale as any)) {
+  if (!["en", "zh"].includes(locale)) {
     console.log("requested locale not found");
     notFound();
   }

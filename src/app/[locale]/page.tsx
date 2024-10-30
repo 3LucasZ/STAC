@@ -94,11 +94,15 @@ export default function Page({ params: { locale } }: PageProps) {
           <Title c={"yellow"}>{t.get(data.luxury.title)}</Title>
           <Text size="xl">{t.get(data.luxury.text)}</Text>
           {luxuriesWrapper}
-          <Center>
-            <Box w={"80%"}>
-              <Image360 url="/STAC/images/360-interior.jpg" />
-            </Box>
-          </Center>
+
+          <Box
+            maw={"99%"}
+            h="auto"
+            // style={{ overflow: "hidden" }}
+          >
+            <Image360 url="/STAC/images/360-interior.jpg" />
+          </Box>
+
           <Title c={"yellow"}>{t.get(data.roomTypes.title)}</Title>
           {roomsWrapper}
           <Text size="xl">{t.get(data.roomTypes.text)}</Text>

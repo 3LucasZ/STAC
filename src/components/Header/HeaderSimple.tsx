@@ -22,8 +22,8 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
   const t = new Translator(locale);
   const preLinks = [
     { link: "", label: t.get(data.aboutUs) },
-    { link: "/apply", label: t.get(data.apply) },
     { link: "/service", label: t.get(data.service) },
+    { link: "/apply", label: t.get(data.apply) },
     { link: "/contact", label: t.get(data.contactUs) },
     { link: "/faq", label: t.get(data.faq) },
   ];
@@ -58,8 +58,9 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
     locale == "en"
       ? pathname.replace("en", "zh")
       : pathname.replace("zh", "en");
+
   const languagePicker = (
-    <Text onClick={() => router.push(newPathname)} c={"blue"}>
+    <Text onClick={() => router.push(newPathname)} c={"blue"} size="lg">
       {locale == "en" ? "English" : "中文"}
     </Text>
   );

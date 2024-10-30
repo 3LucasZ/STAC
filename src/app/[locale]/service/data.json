@@ -52,5 +52,11 @@
       "en": "Guardianship services are available for individuals under 18 years old.",
       "zh": "監護服務適用於 18 歲以下的個人。"
     }
-  ]
+  ],
+  "floorPlans": {
+    "title": {
+      "en": "Floor Plans",
+      "zh": "平面圖"
+    }
+  }
 }
