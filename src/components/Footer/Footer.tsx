@@ -14,22 +14,25 @@ import {
 } from "@tabler/icons-react";
 import classes from "./Footer.module.css";
 
-const data = [
-  {
-    title: "Address",
-    links: [
-      { label: "1 W Campbell Ave C-31", link: "#" },
-      { label: "Campbell, CA 95008", link: "#" },
-    ],
-  },
-  {
-    title: "Give us a call",
-    links: [{ label: "+1 (408) 123 4567", link: "#" }],
-  },
-];
+import data from "./data.json";
+import { Translator } from "@/utils";
 
-export function FooterLinks() {
-  const groups = data.map((group) => {
+export function FooterLinks({ locale }: { locale: string }) {
+  const t = new Translator(locale);
+  const content = [
+    {
+      title: t.get(data.address),
+      links: [
+        { label: "1 W Campbell Ave C-31", link: "#" },
+        { label: "Campbell, CA 95008", link: "#" },
+      ],
+    },
+    {
+      title: t.get(data.call),
+      links: [{ label: "+1 (408) 123 4567", link: "#" }],
+    },
+  ];
+  const groups = content.map((group) => {
     const links = group.links.map((link, index) => (
       <Text<"a">
         key={index}
@@ -63,7 +66,7 @@ export function FooterLinks() {
       </Container>
       <Container className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2024 Student Transit Assist Center. All rights reserved.
+          {t.get(data.copyright)}
         </Text>
 
         <Group

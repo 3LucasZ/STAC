@@ -1,5 +1,5 @@
 "use client";
-import { ContactUs } from "@/components/ContactUs/ContactUs";
+import { ContactUs } from "@/app/[locale]/contact/ContactUs/ContactUs";
 import { List, Stack, Title, Text, Container, Anchor } from "@mantine/core";
 import data from "./data.json";
 import { Translator } from "@/utils";
@@ -18,7 +18,7 @@ export default function Home({
   return (
     <Stack>
       <Title ta="center" py={20} c={"blue"}>
-        Additional Services
+        {t.get(data.title)}
       </Title>
       <Container>
         <List>{checklist}</List>

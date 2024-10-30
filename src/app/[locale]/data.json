@@ -14,103 +14,103 @@
   "whoWeAre": {
     "title": {
       "en": "Who we are",
-      "zh": "placeholder"
+      "zh": "我們是誰"
     },
     "text": {
       "en": "The Student Transit Assist Center (known as STAC) is located in San Jose, in the heart of Silicon Valley, California. We are dedicated to serving international students attending schools in this region. We firmly believe that success comes from professional and comprehensive service. Currently, our center has established long-term strategic partnerships with a number of renowned educational institutions in the United States and well-known study abroad agencies in China. Based on a thorough review of our past services, we are committed to creating a more efficient, effective, and comprehensive one-stop service for studying in the U.S. We provide a range of services to support students' transitions, including housing assistance, student supervision and management, academic advising, tutoring, and more. However, we are not an agency and do not provide agency services. Our 24/7 services assist students in case of emergencies, ensuring a smooth transition to school and dorm life.",
-      "zh": "placeholder"
+      "zh": "學生交通援助中心（STAC）位於加州矽谷中心的聖荷西。我們致力於為在該地區就讀的國際學生提供服務。我們堅信，成功源自於專業和全面的服務。目前，本中心已與美國多家知名教育機構和國內知名留學機構建立了長期策略夥伴關係。基於對我們過往服務的徹底回顧，我們致力於打造更有效率、更有效、更全面的美國留學一站式服務。諮商、輔導等。但我們不是代理機構，不提供代理服務。我們的 24/7 服務可在緊急情況下為學生提供協助，確保順利過渡到學校和宿舍生活。"
     }
   },
   "location": {
     "title": {
       "en": "Location",
-      "zh": "placeholder"
+      "zh": "地點"
     },
     "text": {
       "en": "STAC Dormitory is conveniently located near the headquarters of Apple Inc. and just a 10-minute walk from Westgate Shopping Center, where you can find everything you need. The bus stop is right in front of the STAC dorm, offering easy access to anywhere you want to go.",
-      "zh": "placeholder"
+      "zh": "STAC宿舍位置便利，靠近蘋果公司總部，距離Westgate購物中心僅10分鐘步行路程，在那裡您可以找到您所需的一切。巴士站就位於 STAC 宿舍前，可輕鬆前往您想去的地方。"
     }
   },
   "luxury": {
     "title": {
       "en": "Luxurious",
-      "zh": "placeholder"
+      "zh": "豪華"
     },
     "text": {
       "en": "High-quality, affordable private spaces where you can enjoy comfortable accommodation.",
-      "zh": "placeholder"
+      "zh": "高品質、實惠的私人空間，讓您享受舒適的住宿。"
     }
   },
   "luxuries": [
     {
       "en": "Free public Wi-Fi",
-      "zh": "placeholder"
+      "zh": "免費公共無線網絡"
     },
     {
       "en": "Breakfast is provided on weekdays (except on holidays)",
-      "zh": "placeholder"
+      "zh": "平日提供早餐（假日除外）"
     },
     {
       "en": "Monthly reports can be requested by parents",
-      "zh": "placeholder"
+      "zh": "家長可以要求每月報告"
     },
     {
       "en": "Fully furnished",
-      "zh": "placeholder"
+      "zh": "家具齊全"
     },
     {
       "en": "Kitchen, dining room, and laundry facilities are communal",
-      "zh": "placeholder"
+      "zh": "廚房、餐廳和洗衣設施是公用的"
     },
     {
       "en": "Own Refrigerator",
-      "zh": "placeholder"
+      "zh": "自己的冰箱"
     },
     {
       "en": "Air conditioning",
-      "zh": "placeholder"
+      "zh": "空調"
     },
     {
       "en": "Key card access",
-      "zh": "placeholder"
+      "zh": "鑰匙卡訪問"
     }
   ],
   "roomTypes": {
     "title": {
       "en": "Room types",
-      "zh": "placeholder"
+      "zh": "房型"
     },
     "text": {
       "en": "Prices vary based on the type of room. Please check for the price and availability. The demand for the dormitory is extremely high in Silicon Valley Area. Space at STAC is limited. Join US now!",
-      "zh": "placeholder"
+      "zh": "價格根據房間類型而有所不同。請檢查價格和供應情況。矽谷地區對宿舍的需求非常高。 STAC 的空間有限。立即加入我們！"
     }
   },
   "rooms": [
     {
       "en": "Single rooms: one twin XL bed, each bathroom is shared by only two students.",
-      "zh": "placeholder"
+      "zh": "單人房：一張加大雙人床，每間浴室僅由兩名學生共用。"
     },
     {
       "en": "Bunk beds room: Two beds at top bunk and lower bunk, shared bathroom.",
-      "zh": "placeholder"
+      "zh": "雙層床房：上鋪和下舖各有兩張床，共用浴室。"
     },
     {
       "en": "2 Queen Room: Two queen size beds with own bathroom",
-      "zh": "placeholder"
+      "zh": "2 張大床房：兩張大床，附獨立浴室"
     },
     {
       "en": "King Room: One king size beds with own bathroom One bed room suite with kitchenette and own bathroom",
-      "zh": "placeholder"
+      "zh": "加大雙人床間： 一張加大雙人床，附獨立浴室 一間臥室套房，附小廚房和獨立浴室"
     }
   ],
   "partners": {
     "title": {
       "en": "Partners",
-      "zh": "placeholder"
+      "zh": "合作夥伴"
     },
     "text": {
       "en": "STAC Apartments are the officially recommended dormitories for DeAnza College. We provide the most convenient and professional service experience for our partners. With 24/7 service and security monitoring, we significantly reduce the service load on partners for your students after arriving in the U.S. Welcome to all educational agencies and institutions for collaboration. We aim to become your long-term partner in providing services for your students.",
-      "zh": "placeholder"
+      "zh": "STAC公寓是德安札學院官方推薦的宿舍。我們為合作夥伴提供最便利、最專業的服務體驗。透過24/7的服務和安全監控，我們大大減輕了您的學生到達美國後合作夥伴的服務負擔。我們的目標是成為您的長期合作夥伴，為您的學生提供服務。"
     }
   }
 }

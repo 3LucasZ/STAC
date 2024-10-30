@@ -16,10 +16,13 @@ import {
 
 import classes from "./ContactUs.module.css";
 import { ContactIconsList } from "./ContactIcons";
+import { Translator } from "@/utils";
+import data from "../data.json";
 
 const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
 
-export function ContactUs() {
+export function ContactUs({ locale }: { locale: string }) {
+  const t = new Translator(locale);
   const icons = social.map((Icon, index) => (
     <ActionIcon
       key={index}
@@ -35,31 +38,31 @@ export function ContactUs() {
     <div className={classes.wrapper}>
       <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
         <div>
-          <Title className={classes.title}>Contact us</Title>
+          <Title className={classes.title}>{t.get(data.title)}</Title>
           <Text className={classes.description} mt="sm" mb={30}>
-            Leave your email and we will get back to you within 24 hours
+            {t.get(data.subtitle)}
           </Text>
 
-          <ContactIconsList />
+          <ContactIconsList locale={locale} />
 
           <Group mt="xl">{icons}</Group>
         </div>
         <div className={classes.form}>
           <TextInput
-            label="Email"
+            label={t.get(data.label.email)}
             // placeholder="your@email.com"
             required
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <TextInput
-            label="Name"
+            label={t.get(data.label.name)}
             // placeholder="your name"
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <Textarea
             required
-            label="Message"
+            label={t.get(data.label.message)}
             // placeholder="your message"
             minRows={4}
             mt="md"
@@ -67,7 +70,7 @@ export function ContactUs() {
           />
 
           <Group justify="flex-end" mt="md">
-            <Button className={classes.control}>Send message</Button>
+            <Button className={classes.control}>{t.get(data.actionBtn)}</Button>
           </Group>
         </div>
       </SimpleGrid>

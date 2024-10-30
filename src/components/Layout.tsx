@@ -17,7 +17,7 @@ export default function Layout({
       <Stack gap={0} mih={"100vh"}>
         {children}
       </Stack>
-      <FooterLinks />
+      <FooterLinks locale={locale} />
     </>
   );
 }

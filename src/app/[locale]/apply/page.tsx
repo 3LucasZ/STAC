@@ -1,5 +1,5 @@
 "use client";
-import { ContactUs } from "@/components/ContactUs/ContactUs";
+import { ContactUs } from "@/app/[locale]/contact/ContactUs/ContactUs";
 import { List, Stack, Title, Text, Container, Anchor } from "@mantine/core";
 import data from "./data.json";
 import { Translator } from "@/utils";
@@ -15,7 +15,7 @@ export default function Home({
       href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
       target="_blank"
     >
-      {"(Download Link)"}
+      {t.get(data.link)}
     </Anchor>
   );
   const link2 = (
@@ -24,7 +24,7 @@ export default function Home({
       href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
       target="_blank"
     >
-      {"(Download Link)"}
+      {t.get(data.link)}
     </Anchor>
   );
   const checklist = data.checklist.map((item, index) => (
@@ -37,16 +37,13 @@ export default function Home({
   return (
     <Stack>
       <Title ta="center" py={20} c="blue">
-        Dorm Applications
+        {t.get(data.title)}
       </Title>
       <Container>
         <Stack>
-          <Text size="xl">
-            All application documents must be original or certified; no e-mail,
-            scans or, copies will be accepted.
-          </Text>
+          <Text size="xl">{t.get(data.subtitle)}</Text>
           <Title order={3} c={"blue"}>
-            Application Checklist:
+            {t.get(data.title2)}
           </Title>
           <List>{checklist}</List>
         </Stack>

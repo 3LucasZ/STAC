@@ -1,11 +1,15 @@
 "use client";
-import { ContactUs } from "@/components/ContactUs/ContactUs";
+import { ContactUs } from "@/app/[locale]/contact/ContactUs/ContactUs";
 import { Stack, Container } from "@mantine/core";
 
-export default function Home() {
+export default function Home({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   return (
     <Container pt={80}>
-      <ContactUs></ContactUs>
+      <ContactUs locale={locale}></ContactUs>
     </Container>
   );
 }
