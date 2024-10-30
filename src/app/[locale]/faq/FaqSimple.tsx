@@ -15,12 +15,13 @@ export function FaqSimple({ locale }: { locale: string }) {
     <Container
       size="lg"
       className={classes.wrapper}
+      miw={{ base: "100%", xs: "90%", sm: "80%", md: "70%" }}
       maw={{ base: "100%", xs: "90%", sm: "80%", md: "70%" }}
     >
       <Title ta="center" className={classes.title}>
-        Frequently Asked Questions
+        {t.get(data.title)}
       </Title>
-      <Center>
+      <Center miw={"100%"}>
         <Accordion variant="separated" miw={"100%"}>
           {items}
         </Accordion>

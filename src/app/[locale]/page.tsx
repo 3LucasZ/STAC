@@ -61,25 +61,8 @@ export default function Page({ params: { locale } }: PageProps) {
         <Stack>
           <Box h={"20"}></Box>
           <Stack>
-            <Title c="teal">Who we are</Title>
-            <Text size="xl">
-              The Student Transit Assist Center (known as STAC) is located in
-              San Jose, in the heart of Silicon Valley, California. We are
-              dedicated to serving international students attending schools in
-              this region. We firmly believe that success comes from
-              professional and comprehensive service. Currently, our center has
-              established long-term strategic partnerships with a number of
-              renowned educational institutions in the United States and
-              well-known study abroad agencies in China. Based on a thorough
-              review of our past services, we are committed to creating a more
-              efficient, effective, and comprehensive one-stop service for
-              studying in the U.S. We provide a range of services to support
-              students' transitions, including housing assistance, student
-              supervision and management, academic advising, tutoring, and more.
-              However, we are not an agency and do not provide agency services.
-              Our 24/7 services assist students in case of emergencies, ensuring
-              a smooth transition to school and dorm life.
-            </Text>
+            <Title c="teal">{t.get(data.whoWeAre.title)}</Title>
+            <Text size="xl">{t.get(data.whoWeAre.text)}</Text>
           </Stack>
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={20}>
             <Box h={"100%"}>
@@ -93,14 +76,8 @@ export default function Page({ params: { locale } }: PageProps) {
             <Stack>
               <Center>
                 <Stack>
-                  <Title c={"blue"}>Location</Title>
-                  <Text size="xl">
-                    STAC Dormitory is conveniently located near the headquarters
-                    of Apple Inc. and just a 10-minute walk from Westgate
-                    Shopping Center, where you can find everything you need. The
-                    bus stop is right in front of the STAC dorm, offering easy
-                    access to anywhere you want to go.
-                  </Text>
+                  <Title c={"blue"}>{t.get(data.location.title)}</Title>
+                  <Text size="xl">{t.get(data.location.text)}</Text>
                 </Stack>
               </Center>
               <GoogleMapsEmbed
@@ -114,40 +91,21 @@ export default function Page({ params: { locale } }: PageProps) {
               />
             </Stack>
           </SimpleGrid>
-          <Title c={"yellow"}>Luxurious</Title>
-          <Text size="xl">
-            High-quality, affordable private spaces where you can enjoy
-            comfortable accommodation.
-          </Text>
+          <Title c={"yellow"}>{t.get(data.luxury.title)}</Title>
+          <Text size="xl">{t.get(data.luxury.text)}</Text>
           {luxuriesWrapper}
           <Center>
             <Box w={"80%"}>
               <Image360 url="/STAC/images/360-interior.jpg" />
             </Box>
           </Center>
-          <Title c={"yellow"}>Room types</Title>
+          <Title c={"yellow"}>{t.get(data.roomTypes.title)}</Title>
           {roomsWrapper}
-          <Text size="xl">
-            Prices vary based on the type of room. Please check for the price
-            and availability.
-          </Text>
-          <Text size="xl">
-            The demand for the dormitory is extremely high in Silicon Valley
-            Area. Space at STAC is limited. Join US now!
-          </Text>
+          <Text size="xl">{t.get(data.roomTypes.text)}</Text>
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={20}>
             <Stack>
-              <Title c={"red"}>Partners</Title>
-              <Text size="xl">
-                STAC Apartments are the officially recommended dormitories for
-                DeAnza College. We provide the most convenient and professional
-                service experience for our partners. With 24/7 service and
-                security monitoring, we significantly reduce the service load on
-                partners for your students after arriving in the U.S. Welcome to
-                all educational agencies and institutions for collaboration. We
-                aim to become your long-term partner in providing services for
-                your students.
-              </Text>
+              <Title c={"red"}>{t.get(data.partners.title)}</Title>
+              <Text size="xl">{t.get(data.partners.text)}</Text>
             </Stack>
             <Image
               src="/STAC/images/deanza.jpg"
