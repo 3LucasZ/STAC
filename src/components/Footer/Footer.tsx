@@ -20,16 +20,38 @@ import { Translator } from "@/utils";
 export function FooterLinks({ locale }: { locale: string }) {
   const t = new Translator(locale);
   const content = [
+    // {
+    //   title: t.get(data.wechat),
+    //   links: [
+    //     // { label: "1 W Campbell Ave C-31", link: "#" },
+    //     // { label: "Campbell, CA 95008", link: "#" },
+    //   ],
+    // },
+    // {
+    //   title: t.get(data.line),
+    //   links: [],
+    // },
+    // {
+    //   title: t.get(data.whatsapp),
+    //   links: [
+    //     // { label: "1 W Campbell Ave C-31", link: "#" }
+    //   ],
+    // },
     {
-      title: t.get(data.address),
+      title: t.get(data.contacts),
       links: [
-        { label: "1 W Campbell Ave C-31", link: "#" },
-        { label: "Campbell, CA 95008", link: "#" },
+        { label: "WeChat", link: "#" },
+        { label: "Line", link: "#" },
+        { label: "WhatsApp", link: "#" },
       ],
     },
     {
       title: t.get(data.call),
       links: [{ label: "+1 (408) 123 4567", link: "#" }],
+    },
+    {
+      title: t.get(data.email),
+      links: [{ label: "dongli@stac.com", link: "#" }],
     },
   ];
   const groups = content.map((group) => {

@@ -8,6 +8,7 @@
     url(/STAC/images/apartment.jpg);
   padding-top: calc(var(--mantine-spacing-xl) * 3);
   padding-bottom: calc(var(--mantine-spacing-xl) * 3);
+  /* height: 1200px; */
 }
 
 .inner {

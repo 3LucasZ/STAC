@@ -1,10 +1,10 @@
 {
   "title": {
-    "en": "Student Apartments",
+    "en": "STAC Center",
     "zh": "學生公寓"
   },
   "subtitle": {
-    "en": "Made Easy",
+    "en": "The Best Dormitory",
     "zh": "變得簡單"
   },
   "actionBtnText": {
@@ -27,7 +27,7 @@
       "zh": "地點"
     },
     "text": {
-      "en": "STAC Dormitory is conveniently located near the headquarters of Apple Inc. and just a 10-minute walk from Westgate Shopping Center, where you can find everything you need. The bus stop is right in front of the STAC dorm, offering easy access to anywhere you want to go.",
+      "en": "STAC Center is conveniently located near the headquarters of Apple Inc. and just a 10-minute walk from Westgate Shopping Center, where you can find everything you need. The bus stop is right in front of the STAC Center, offering easy access to anywhere you want to go.",
       "zh": "STAC宿舍位置便利，靠近蘋果公司總部，距離Westgate購物中心僅10分鐘步行路程，在那裡您可以找到您所需的一切。巴士站就位於 STAC 宿舍前，可輕鬆前往您想去的地方。"
     }
   },
@@ -45,10 +45,6 @@
     {
       "en": "Free public Wi-Fi",
       "zh": "免費公共無線網絡"
-    },
-    {
-      "en": "Breakfast is provided on weekdays (except on holidays)",
-      "zh": "平日提供早餐（假日除外）"
     },
     {
       "en": "Monthly reports can be requested by parents",
@@ -99,7 +95,11 @@
       "zh": "2 張大床房：兩張大床，附獨立浴室"
     },
     {
-      "en": "King Room: One king size beds with own bathroom One bed room suite with kitchenette and own bathroom",
+      "en": "King Room: One king size beds with own bathroom",
+      "zh": "加大雙人床間： 一張加大雙人床，附獨立浴室 一間臥室套房，附小廚房和獨立浴室"
+    },
+    {
+      "en": "One bed room suite with kitchenette and own bathroom",
       "zh": "加大雙人床間： 一張加大雙人床，附獨立浴室 一間臥室套房，附小廚房和獨立浴室"
     }
   ],

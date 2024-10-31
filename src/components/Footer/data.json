@@ -3,12 +3,28 @@
     "en": "© 2024 Student Transit Assist Center. All rights reserved.",
     "zh": "© 2024 學生交通援助中心。版權所有。"
   },
-  "address": {
-    "en": "Address",
-    "zh": "地址"
+  "wechat": {
+    "en": "WeChat",
+    "zh": "placeholder"
+  },
+  "line": {
+    "en": "Line",
+    "zh": "placeholder"
+  },
+  "whatsapp": {
+    "en": "WhatsApp",
+    "zh": "placeholder"
+  },
+  "contacts": {
+    "en": "Contacts",
+    "zh": "聯絡方式"
   },
   "call": {
     "en": "Give us a call",
     "zh": "打電話給我們"
+  },
+  "email": {
+    "en": "Email us",
+    "zh": "給我們發電子郵件"
   }
 }

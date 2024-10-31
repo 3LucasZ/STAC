@@ -55,6 +55,7 @@ export default function Page({ params: { locale } }: PageProps) {
         title={t.get(data.title)}
         subtitle={t.get(data.subtitle)}
         actionBtnText={t.get(data.actionBtnText)}
+        locale={locale}
       />
       {/* <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" /> */}
       <Container>
@@ -67,7 +68,7 @@ export default function Page({ params: { locale } }: PageProps) {
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={20}>
             <Box h={"100%"}>
               <Image
-                src="/STAC/images/location.jpg"
+                src="/STAC/images/rooms/generic.jpg"
                 fit="cover"
                 radius={"lg"}
                 h={"100%"}
@@ -82,12 +83,12 @@ export default function Page({ params: { locale } }: PageProps) {
               </Center>
               <GoogleMapsEmbed
                 apiKey="AIzaSyBzhWjXgSpbwDRM5WZCjzky3kvyOFXW2Yw"
-                height={200}
+                height={400}
                 width={"100%"}
-                mode="place"
+                mode="view"
                 zoom="17"
-                center="37.2882,-121.9521"
-                q="Campbell+Community+Center"
+                center="37.293834,-121.976704"
+                language={locale}
               />
             </Stack>
           </SimpleGrid>

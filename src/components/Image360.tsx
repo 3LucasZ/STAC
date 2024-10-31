@@ -20,8 +20,9 @@ export default function Image360(props: Props) {
         enablePan={false}
         enableDamping
         dampingFactor={0.2}
-        // autoRotate
-        rotateSpeed={-0.5}
+        autoRotate
+        autoRotateSpeed={0.25}
+        rotateSpeed={0.5}
       />
       <Suspense fallback={null}>
         <mesh>
