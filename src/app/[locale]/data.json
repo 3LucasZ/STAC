@@ -83,24 +83,39 @@
   },
   "rooms": [
     {
-      "en": "Single rooms: one twin XL bed, each bathroom is shared by only two students.",
-      "zh": "單人房：一張加大雙人床，每間浴室僅由兩名學生共用。"
+      "name": "Lotus",
+      "description": {
+        "en": "Single rooms: one twin XL bed, each bathroom is shared by only two students.",
+        "zh": "單人房：一張加大雙人床，每間浴室僅由兩名學生共用。"
+      }
     },
     {
-      "en": "Bunk beds room: Two beds at top bunk and lower bunk, shared bathroom.",
-      "zh": "雙層床房：上鋪和下舖各有兩張床，共用浴室。"
+      "name": "Phoenix",
+      "description": {
+        "en": "Bunk beds room: Two beds at top bunk and lower bunk, shared bathroom.",
+        "zh": "雙層床房：上鋪和下舖各有兩張床，共用浴室。"
+      }
     },
     {
-      "en": "2 Queen Room: Two queen size beds with own bathroom",
-      "zh": "2 張大床房：兩張大床，附獨立浴室"
+      "name": "Pagoda",
+      "description": {
+        "en": "2 Queen Room: Two queen size beds with own bathroom",
+        "zh": "2 張大床房：兩張大床，附獨立浴室"
+      }
     },
     {
-      "en": "King Room: One king size beds with own bathroom",
-      "zh": "加大雙人床間： 一張加大雙人床，附獨立浴室 一間臥室套房，附小廚房和獨立浴室"
+      "name": "Jade",
+      "description": {
+        "en": "King Room: One king size beds with own bathroom",
+        "zh": "加大雙人床間： 一張加大雙人床，附獨立浴室 一間臥室套房，附小廚房和獨立浴室"
+      }
     },
     {
-      "en": "One bed room suite with kitchenette and own bathroom",
-      "zh": "加大雙人床間： 一張加大雙人床，附獨立浴室 一間臥室套房，附小廚房和獨立浴室"
+      "name": "Harmony",
+      "description": {
+        "en": "One bed room suite with kitchenette and own bathroom",
+        "zh": "加大雙人床間： 一張加大雙人床，附獨立浴室 一間臥室套房，附小廚房和獨立浴室"
+      }
     }
   ],
   "partners": {

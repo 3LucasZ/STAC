@@ -16,6 +16,7 @@ import { GoogleMapsEmbed } from "@next/third-parties/google";
 import data from "./data.json";
 import { Translator } from "@/utils";
 import dynamic from "next/dynamic";
+import { Room } from "@/components/Room";
 const Image360 = dynamic(
   () => import("@/components/Image360").then((mod) => mod.default),
   {
@@ -42,12 +43,21 @@ export default function Page({ params: { locale } }: PageProps) {
   // rooms
   const rooms = data.rooms.map((room, index) => {
     return (
-      <List.Item key={index}>
-        <Text size="xl">{t.get(room)}</Text>
-      </List.Item>
+      <Room
+        name={room.name}
+        description={t.get(room.description)}
+        locale={locale}
+        key={index}
+      />
     );
   });
-  const roomsWrapper = <List>{rooms}</List>;
+  const roomsWrapper = (
+    <Center>
+      <SimpleGrid cols={{ base: 1, sm: 2, md: 2 }} spacing={40}>
+        {rooms}
+      </SimpleGrid>
+    </Center>
+  );
   //ret
   return (
     <Stack gap={0}>
@@ -58,7 +68,10 @@ export default function Page({ params: { locale } }: PageProps) {
         locale={locale}
       />
       {/* <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" /> */}
-      <Container>
+      <Container
+        // fluid maw={{ base: "100%", sm: "90%", md: "80%" }}
+        size={"lg"}
+      >
         <Stack>
           <Box h={"20"}></Box>
           <Stack>
@@ -104,7 +117,9 @@ export default function Page({ params: { locale } }: PageProps) {
             <Image360 url="/STAC/images/360-interior.jpg" />
           </Box>
 
-          <Title c={"yellow"}>{t.get(data.roomTypes.title)}</Title>
+          <Title c={"yellow"} ta={"center"}>
+            {t.get(data.roomTypes.title)}
+          </Title>
           {roomsWrapper}
           <Text size="xl">{t.get(data.roomTypes.text)}</Text>
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={20}>
