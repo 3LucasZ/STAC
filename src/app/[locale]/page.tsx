@@ -16,7 +16,7 @@ import { GoogleMapsEmbed } from "@next/third-parties/google";
 import data from "./data.json";
 import { Translator } from "@/utils";
 import dynamic from "next/dynamic";
-import { Room } from "@/components/Room";
+import { Room } from "@/components/Room/Room";
 const Image360 = dynamic(
   () => import("@/components/Image360").then((mod) => mod.default),
   {
@@ -120,6 +120,9 @@ export default function Page({ params: { locale } }: PageProps) {
           <Title c={"yellow"} ta={"center"}>
             {t.get(data.roomTypes.title)}
           </Title>
+          <Text size="xl" ta={"center"}>
+            {t.get(data.roomTypes.subtitle)}
+          </Text>
           {roomsWrapper}
           <Text size="xl">{t.get(data.roomTypes.text)}</Text>
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={20}>

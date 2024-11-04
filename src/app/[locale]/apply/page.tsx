@@ -67,9 +67,9 @@ export default function Home({
           {t.get(data.title2)}
         </Title>
         <List>{checklist}</List>
-        <Carousel slideSize="70%" height={500} slideGap="md" loop dragFree>
+        {/* <Carousel slideSize="70%" height={500} slideGap="md" loop dragFree>
           {images}
-        </Carousel>
+        </Carousel> */}
       </Stack>
     </Container>
   );

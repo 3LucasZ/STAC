@@ -39,20 +39,23 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
 
   const [opened, { toggle }] = useDisclosure(false);
 
-  const items = links.map((link) => (
-    <a
-      key={link.label}
-      href={link.link}
-      className={classes.link}
-      data-active={pathname === link.link || undefined}
-      onClick={(event) => {
-        event.preventDefault();
-        router.push(link.link);
-      }}
-    >
-      {link.label}
-    </a>
-  ));
+  function items(burger: boolean) {
+    return links.map((link) => (
+      <a
+        key={link.label}
+        href={link.link}
+        className={classes.link}
+        data-active={pathname === link.link || undefined}
+        onClick={(event) => {
+          event.preventDefault();
+          router.push(link.link);
+          if (burger) toggle();
+        }}
+      >
+        {link.label}
+      </a>
+    ));
+  }
 
   const newPathname =
     locale == "en"
@@ -71,7 +74,7 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
         {/* <Box size={28}></Box> */}
         <Image h={40} src={"/STAC/images/mini-logo.png"} />
         <Group gap={5} visibleFrom="xs">
-          {items}
+          {items(false)}
         </Group>
         <Box visibleFrom="xs">{languagePicker}</Box>
         <Burger opened={false} onClick={toggle} hiddenFrom="xs" size="sm" />
@@ -85,7 +88,7 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
         size={"sm"}
       >
         <Stack>
-          {items}
+          {items(true)}
           <Box p={8}>{languagePicker}</Box>
         </Stack>
       </Drawer>

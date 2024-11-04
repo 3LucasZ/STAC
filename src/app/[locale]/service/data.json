@@ -53,7 +53,19 @@
       "zh": "監護服務適用於 18 歲以下的個人。"
     }
   ],
-  "floorPlans": {
+  "a": {
+    "title": {
+      "en": "Common Areas",
+      "zh": "平面圖"
+    }
+  },
+  "b": {
+    "title": {
+      "en": "Bathrooms",
+      "zh": "平面圖"
+    }
+  },
+  "c": {
     "title": {
       "en": "Floor Plans",
       "zh": "平面圖"

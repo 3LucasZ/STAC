@@ -1,0 +1,19 @@
+.card {
+  outline-style: solid;
+  outline-width: 0px;
+  outline-color: white;
+  transition: outline-width 500ms ease-out, outline-color 500ms ease-out;
+
+  @mixin hover {
+    & .image {
+      transform: scale(1.05);
+    }
+
+    outline-color: var(--mantine-color-blue-3);
+    outline-width: 5px;
+  }
+}
+
+.image {
+  transition: transform 500ms ease;
+}

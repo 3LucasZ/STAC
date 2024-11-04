@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-image: 
     /* linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), */
-    url(/STAC/images/apartment.jpg);
+    url(/STAC/images/exterior/1.jpg);
   padding-top: calc(var(--mantine-spacing-xl) * 3);
   padding-bottom: calc(var(--mantine-spacing-xl) * 3);
   /* height: 1200px; */
