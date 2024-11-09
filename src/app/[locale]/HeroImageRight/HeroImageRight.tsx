@@ -19,7 +19,9 @@ export function HeroImageRight({
       <Container size="lg" h={{ base: 400, xs: 500, sm: 600, md: 800 }}>
         <div className={classes.inner}>
           <div className={classes.content}>
-            <Title className={classes.title}>{title} </Title>
+            <Title className={classes.title} c={"white"}>
+              {title}{" "}
+            </Title>
             <Title className={classes.title}>
               <Text
                 component="span"
