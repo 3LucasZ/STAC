@@ -8,6 +8,7 @@ import {
   Container,
   Image,
   Anchor,
+  Group,
 } from "@mantine/core";
 import data from "./data.json";
 import { Translator } from "@/utils";
@@ -18,41 +19,27 @@ export default function Home({
   params: { locale: string };
 }) {
   const t = new Translator(locale);
-  const imageUrls = [
-    "/STAC/images/interior.jpg",
-    "/STAC/images/interior.jpg",
-    "/STAC/images/interior.jpg",
-    "/STAC/images/interior.jpg",
-    "/STAC/images/interior.jpg",
-  ];
-  const images = imageUrls.map((url, index) => (
-    <Carousel.Slide key={index}>
-      <Image src={url} />
-    </Carousel.Slide>
+  const forms = data.forms.map((form) => (
+    <Anchor
+      size="xl"
+      href={"/STAC/forms/" + locale + "/" + form.href}
+      target="_blank"
+    >
+      {t.get(form.link)}
+    </Anchor>
   ));
-  const link1 = (
-    <Anchor
-      size="xl"
-      href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
-      target="_blank"
-    >
-      {t.get(data.link)}
-    </Anchor>
-  );
-  const link2 = (
-    <Anchor
-      size="xl"
-      href="https://raec.rocklinusd.org/documents/gradportfoliofiles/standard%20application.pdf"
-      target="_blank"
-    >
-      {t.get(data.link)}
-    </Anchor>
-  );
+
   const checklist = data.checklist.map((item, index) => (
     <List.Item key={index}>
       <Text size="xl">{t.get(item)}</Text>
-      {index == 0 && link1}
-      {index == 5 && link2}
+      {index == 0 && forms[2]}
+      {index == 4 && forms[0]}
+      {index == 5 && (
+        <Group>
+          {forms[3]}
+          {forms[1]}
+        </Group>
+      )}
     </List.Item>
   ));
   return (
@@ -67,9 +54,6 @@ export default function Home({
           {t.get(data.title2)}
         </Title>
         <List>{checklist}</List>
-        {/* <Carousel slideSize="70%" height={500} slideGap="md" loop dragFree>
-          {images}
-        </Carousel> */}
       </Stack>
     </Container>
   );

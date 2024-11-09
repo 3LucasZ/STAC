@@ -1,4 +1,4 @@
-import { Container, Title, Text, Button } from "@mantine/core";
+import { Container, Title, Text, Button, Box } from "@mantine/core";
 import classes from "./HeroImageRight.module.css";
 import { useRouter } from "next/navigation";
 
@@ -49,3 +49,11 @@ export function HeroImageRight({
     </div>
   );
 }
+
+/*
+<Box
+  bg={"rgba(255, 255, 255, 0.5)"}
+  p={16}
+  style={{ borderRadius: 8 }}
+></Box>
+*/

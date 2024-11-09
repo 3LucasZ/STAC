@@ -37,8 +37,34 @@
       "zh": "提交未成年學生的家長免責表以及監護服務費的可退還信用卡授權（如果您未滿 18 歲）。"
     }
   ],
-  "link": {
-    "en": "(Download here)",
-    "zh": "（在此下載）"
-  }
+  "forms": [
+    {
+      "link": {
+        "en": "(Download here)",
+        "zh": "（在此下載）"
+      },
+      "href": "credit.pdf"
+    },
+    {
+      "link": {
+        "en": "(Download here)",
+        "zh": "（在此下載）"
+      },
+      "href": "credit18.pdf"
+    },
+    {
+      "link": {
+        "en": "(Download here)",
+        "zh": "（在此下載）"
+      },
+      "href": "main.pdf"
+    },
+    {
+      "link": {
+        "en": "(Download here)",
+        "zh": "（在此下載）"
+      },
+      "href": "release.pdf"
+    }
+  ]
 }
