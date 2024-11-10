@@ -12,8 +12,8 @@ export default function Home({
     { title: "WhatsApp", src: "/STAC/images/socials/whatsapp.png" },
     { title: "LINE", src: "/STAC/images/socials/line.jpg" },
   ];
-  const contactItems = contacts.map((contact) => (
-    <Stack align="center">
+  const contactItems = contacts.map((contact, index) => (
+    <Stack align="center" key={index}>
       <Title>{contact.title}</Title>
       <Image
         src={contact.src}
