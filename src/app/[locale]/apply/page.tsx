@@ -19,11 +19,12 @@ export default function Home({
   params: { locale: string };
 }) {
   const t = new Translator(locale);
-  const forms = data.forms.map((form) => (
+  const forms = data.forms.map((form, index) => (
     <Anchor
       size="xl"
       href={"/STAC/forms/" + locale + "/" + form.href}
       target="_blank"
+      key={index}
     >
       {t.get(form.link)}
     </Anchor>

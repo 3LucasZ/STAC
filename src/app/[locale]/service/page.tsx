@@ -61,7 +61,12 @@ export default function Home({
         <Title ta="center" py={20} c={"blue"}>
           {t.get(data.b.title)}
         </Title>
-        <Carousel slideSize="70%" slideGap="lg" loop dragFree>
+        <Carousel
+          slideSize={{ base: "90%", sm: "80%", md: "70%" }}
+          slideGap="lg"
+          loop
+          dragFree
+        >
           {bathroomImages.map((img, index) => (
             <Carousel.Slide key={index}>{img}</Carousel.Slide>
           ))}

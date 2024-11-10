@@ -45,7 +45,7 @@ export function ContactUs({ locale }: { locale: string }) {
 
           <ContactIconsList locale={locale} />
 
-          <Group mt="xl">{icons}</Group>
+          {/* <Group mt="xl">{icons}</Group> */}
         </div>
         <div className={classes.form}>
           <TextInput

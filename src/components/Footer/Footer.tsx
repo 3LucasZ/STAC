@@ -40,18 +40,18 @@ export function FooterLinks({ locale }: { locale: string }) {
     {
       title: t.get(data.contacts),
       links: [
-        { label: "WeChat", link: "#" },
-        { label: "Line", link: "#" },
-        { label: "WhatsApp", link: "#" },
+        { label: "WeChat", link: "/STAC/" + locale + "/contact" },
+        { label: "Line", link: "/STAC/" + locale + "/contact" },
+        { label: "WhatsApp", link: "/STAC/" + locale + "/contact" },
       ],
     },
     {
       title: t.get(data.call),
-      links: [{ label: "+1 (408) 123 4567", link: "#" }],
+      links: [{ label: "+1 (408) 123 4567", link: "NONE" }],
     },
     {
       title: t.get(data.email),
-      links: [{ label: "dongli@stac.com", link: "#" }],
+      links: [{ label: "dongli@stac.com", link: "NONE" }],
     },
   ];
   const groups = content.map((group) => {
@@ -59,9 +59,9 @@ export function FooterLinks({ locale }: { locale: string }) {
       <Text<"a">
         key={index}
         className={classes.link}
-        component="a"
-        href={link.link}
-        onClick={(event) => event.preventDefault()}
+        {...(link.link !== "NONE" && { component: "a", href: link.link })}
+
+        // onClick={(event) => event.preventDefault()}
       >
         {link.label}
       </Text>
@@ -91,7 +91,7 @@ export function FooterLinks({ locale }: { locale: string }) {
           {t.get(data.copyright)}
         </Text>
 
-        <Group
+        {/* <Group
           gap={0}
           className={classes.social}
           justify="flex-end"
@@ -115,7 +115,7 @@ export function FooterLinks({ locale }: { locale: string }) {
               stroke={1.5}
             />
           </ActionIcon>
-        </Group>
+        </Group> */}
       </Container>
     </footer>
   );
