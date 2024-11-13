@@ -1,70 +1,76 @@
 {
   "title": {
     "en": "Dorm Applications",
-    "zh": "宿舍申請"
+    "zh": "申请表格"
   },
   "subtitle": {
     "en": "All application documents must be original or certified; no e-mail, scans or, copies will be accepted.",
-    "zh": "所有申請文件必須是原件或經過認證的；不接受電子郵件、掃描件或影印件。"
+    "zh": "所有申请文件必须为原件，认证文件，扫描件或复印件。不接受电子邮件申请。"
   },
   "title2": {
     "en": "Application Checklist:",
-    "zh": "申請清單："
+    "zh": "申请清单："
   },
   "checklist": [
     {
       "en": "Complete, sign, and return this application form with a copy of the photo page in your passport.",
-      "zh": "填寫、簽署並寄回此申請表，並附上護照照片頁的副本。"
+      "zh": "完成并签署此申请表，并附上护照照片页的复印件。"
     },
     {
       "en": "Attach a recent photograph to the application form.",
-      "zh": "在申請表上附上一張近期照片。"
+      "zh": "在申请表上附上一张近期照片。"
     },
     {
       "en": "Submit an original bank letter dated within the last 6 months with an official signature on bank letterhead that verifies the current balance in USD of your account or your sponsor's/guardian's account.",
-      "zh": "提交最近 6 個月內的銀行信函原件，並在銀行信箋上有正式簽名，以驗證您的帳戶或擔保人/監護人帳戶的當前美元餘額。"
+      "zh": "提交在过去6个月内开具的原始银行信函，需带有银行抬头和官方签名，证明您或您的资助人/监护人账户的当前余额."
     },
     {
       "en": "Submit proof of medical insurance or travel insurance.",
-      "zh": "提交醫療保險或旅遊保險證明。"
+      "zh": "提交医疗保险或旅行保险的证明。"
     },
     {
       "en": "Submit the credit card authorization for the fees.",
-      "zh": "提交信用卡費用授權。"
+      "zh": "提交费用的信用卡授权书。"
     },
     {
       "en": "Submit this Parental Release form for a minor student along with the refundable credit card authorization for the Guardianship Service Charge (if you are under 18 years old).",
-      "zh": "提交未成年學生的家長免責表以及監護服務費的可退還信用卡授權（如果您未滿 18 歲）。"
+      "zh": "如果您未满18岁，请提交未成年人家长授权书以及监护服务费和申请费信用卡授权书。"
     }
   ],
   "forms": [
     {
       "link": {
         "en": "(Download here)",
-        "zh": "（在此下載）"
+        "zh": "（在此下载）"
       },
       "href": "credit.pdf"
     },
     {
       "link": {
         "en": "(Download here)",
-        "zh": "（在此下載）"
+        "zh": "（在此下载）"
       },
       "href": "credit18.pdf"
     },
     {
       "link": {
         "en": "(Download here)",
-        "zh": "（在此下載）"
+        "zh": "（在此下载）"
       },
       "href": "main.pdf"
     },
     {
       "link": {
         "en": "(Download here)",
-        "zh": "（在此下載）"
+        "zh": "（在此下载）"
       },
       "href": "release.pdf"
     }
-  ]
+  ],
+  "floorPlan": {
+    "title": {
+      "en": "Floor Plan",
+      "zh": "平面图"
+    }
+  }
 }

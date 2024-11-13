@@ -9,6 +9,7 @@ import {
   Image,
   Anchor,
   Group,
+  SimpleGrid,
 } from "@mantine/core";
 import data from "./data.json";
 import { Translator } from "@/utils";
@@ -43,6 +44,16 @@ export default function Home({
       )}
     </List.Item>
   ));
+
+  const commonAreaImages = [1, 2, 3, 4].map((x, index) => (
+    <Image
+      src={"/images/floor-plans/" + x + ".jpg"}
+      radius={"lg"}
+      key={index}
+      // h={400}
+    />
+  ));
+
   return (
     <Container>
       <Stack>
@@ -55,6 +66,14 @@ export default function Home({
           {t.get(data.title2)}
         </Title>
         <List>{checklist}</List>
+
+        <Title ta="center" py={20} c={"blue"}>
+          {t.get(data.floorPlan.title)}
+        </Title>
+
+        <SimpleGrid cols={{ base: 1, sm: 2, md: 2 }} spacing={30}>
+          {commonAreaImages}
+        </SimpleGrid>
       </Stack>
     </Container>
   );
