@@ -1,22 +1,22 @@
 {
   "aboutUs": {
     "en": "About Us",
-    "zh": "關於我們"
+    "zh": "关于我们"
   },
   "service": {
     "en": "Service",
-    "zh": "我們我們"
+    "zh": "服务"
   },
   "apply": {
     "en": "Apply",
-    "zh": "申請"
+    "zh": "申请"
   },
   "faq": {
     "en": "FAQ",
-    "zh": "常問問題"
+    "zh": "FAQ"
   },
   "contactUs": {
     "en": "Contact Us",
-    "zh": "聯絡我們"
+    "zh": "联系我们"
   }
 }
