@@ -1,30 +1,18 @@
 {
   "copyright": {
     "en": "© 2024 Student Transit Assist Center. All rights reserved.",
-    "zh": "© 2024 學生交通援助中心。版權所有。"
-  },
-  "wechat": {
-    "en": "WeChat",
-    "zh": "placeholder"
-  },
-  "line": {
-    "en": "Line",
-    "zh": "placeholder"
-  },
-  "whatsapp": {
-    "en": "WhatsApp",
-    "zh": "placeholder"
+    "zh": "© 2024 学生交通援助中心。版权所有。"
   },
   "contacts": {
     "en": "Contacts",
-    "zh": "聯絡方式"
+    "zh": "联系方式"
   },
   "call": {
     "en": "Give us a call",
-    "zh": "打電話給我們"
+    "zh": "给我们打电话"
   },
   "email": {
     "en": "Email us",
-    "zh": "給我們發電子郵件"
+    "zh": "给我们发电子邮件"
   }
 }

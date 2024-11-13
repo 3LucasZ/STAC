@@ -38,17 +38,17 @@ export function ContactIconsList({ locale }: { locale: string }) {
   const MOCKDATA = [
     {
       title: t.get(data.label.email),
-      description: "info@stac-center.com",
+      description: t.get(data.label.email.value),
       icon: IconAt,
     },
     {
       title: t.get(data.label.phone),
-      description: "(408)-123-4567",
+      description: t.get(data.label.phone.value),
       icon: IconPhone,
     },
     {
       title: t.get(data.label.hours),
-      description: "8 a.m. – 11 p.m.",
+      description: t.get(data.label.hours.value),
       icon: IconSun,
     },
   ];

@@ -1,16 +1,20 @@
 {
   "title": {
     "en": "Contact us",
-    "zh": "聯絡我們"
+    "zh": "联系我们"
   },
   "subtitle": {
     "en": "Leave your email and we will get back to you within 24 hours",
-    "zh": "留下您的電子郵件，我們將在24小時內回覆您"
+    "zh": "留下您的电子邮件，我们将在24小时内回复您。"
   },
   "label": {
     "email": {
       "en": "Email",
-      "zh": "電子郵件"
+      "zh": "电子邮件",
+      "value": {
+        "en": "info@stac-center.com",
+        "zh": "info@stac-center.com"
+      }
     },
     "name": {
       "en": "Name",
@@ -18,19 +22,43 @@
     },
     "message": {
       "en": "Message",
-      "zh": "訊息"
+      "zh": "留言"
     },
     "phone": {
       "en": "Phone",
-      "zh": "電話"
+      "zh": "電話",
+      "value": {
+        "en": "(408)-883-5739",
+        "zh": "(408)-883-5739"
+      }
     },
     "hours": {
       "en": "Working hours",
-      "zh": "工作時間"
+      "zh": "办工时间",
+      "value": {
+        "en": "8 a.m. - 6 p.m.",
+        "zh": "8 a.m. - 6 p.m."
+      }
     }
   },
   "actionBtn": {
     "en": "Send message",
-    "zh": "發送訊息"
+    "zh": "发送消息"
+  },
+  "weChat": {
+    "en": "WeChat",
+    "zh": "微信"
+  },
+  "whatsApp": {
+    "en": "WhatsApp",
+    "zh": "WhatsApp"
+  },
+  "line": {
+    "en": "LINE",
+    "zh": "LINE"
+  },
+  "x": {
+    "en": "Twitter (X)",
+    "zh": "推特（X）"
   }
 }

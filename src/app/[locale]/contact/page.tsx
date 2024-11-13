@@ -1,17 +1,20 @@
 "use client";
 import { ContactUs } from "@/app/[locale]/contact/ContactUs/ContactUs";
+import { Translator } from "@/utils";
 import { Stack, Container, Title, Image, SimpleGrid, Box } from "@mantine/core";
+import data from "./data.json";
 
 export default function Home({
   params: { locale },
 }: {
   params: { locale: string };
 }) {
+  const t = new Translator(locale);
   const contacts = [
-    { title: "WeChat", src: "/images/socials/wechat.png" },
-    { title: "WhatsApp", src: "/images/socials/whatsapp.png" },
-    { title: "LINE", src: "/images/socials/line.jpg" },
-    { title: "Twitter (X)", src: "/images/socials/twitter.jpg" },
+    { title: t.get(data.weChat), src: "/images/socials/wechat.png" },
+    { title: t.get(data.whatsApp), src: "/images/socials/whatsapp.png" },
+    { title: t.get(data.line), src: "/images/socials/line.jpg" },
+    { title: t.get(data.x), src: "/images/socials/twitter.jpg" },
   ];
   const contactItems = contacts.map((contact, index) => (
     <Stack align="center" key={index}>

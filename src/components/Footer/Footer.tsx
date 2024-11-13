@@ -15,6 +15,7 @@ import {
 import classes from "./Footer.module.css";
 
 import data from "./data.json";
+import data2 from "@/app/[locale]/contact/data.json";
 import { Translator } from "@/utils";
 
 export function FooterLinks({ locale }: { locale: string }) {
@@ -40,19 +41,19 @@ export function FooterLinks({ locale }: { locale: string }) {
     {
       title: t.get(data.contacts),
       links: [
-        { label: "WeChat", link: "/" + locale + "/contact" },
-        { label: "Line", link: "/" + locale + "/contact" },
-        { label: "WhatsApp", link: "/" + locale + "/contact" },
-        { label: "Twitter (X)", link: "/" + locale + "/contact" },
+        { label: t.get(data2.weChat), link: "/" + locale + "/contact" },
+        { label: t.get(data2.whatsApp), link: "/" + locale + "/contact" },
+        { label: t.get(data2.line), link: "/" + locale + "/contact" },
+        { label: t.get(data2.x), link: "/" + locale + "/contact" },
       ],
     },
     {
       title: t.get(data.call),
-      links: [{ label: "+1 (408) 123 4567", link: "NONE" }],
+      links: [{ label: t.get(data2.label.phone.value), link: "NONE" }],
     },
     {
       title: t.get(data.email),
-      links: [{ label: "info@stac.com", link: "NONE" }],
+      links: [{ label: t.get(data2.label.email.value), link: "NONE" }],
     },
   ];
   const groups = content.map((group) => {
