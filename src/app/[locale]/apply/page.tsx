@@ -22,7 +22,7 @@ export default function Home({
   const forms = data.forms.map((form, index) => (
     <Anchor
       size="xl"
-      href={"/STAC/forms/" + locale + "/" + form.href}
+      href={"/forms/" + locale + "/" + form.href}
       target="_blank"
       key={index}
     >

@@ -8,9 +8,9 @@ export default function Home({
   params: { locale: string };
 }) {
   const contacts = [
-    { title: "WeChat", src: "/STAC/images/socials/wechat.png" },
-    { title: "WhatsApp", src: "/STAC/images/socials/whatsapp.png" },
-    { title: "LINE", src: "/STAC/images/socials/line.jpg" },
+    { title: "WeChat", src: "/images/socials/wechat.png" },
+    { title: "WhatsApp", src: "/images/socials/whatsapp.png" },
+    { title: "LINE", src: "/images/socials/line.jpg" },
   ];
   const contactItems = contacts.map((contact, index) => (
     <Stack align="center" key={index}>

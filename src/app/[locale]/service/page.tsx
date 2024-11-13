@@ -21,7 +21,7 @@ export default function Home({
   const t = new Translator(locale);
   const bathroomImages = [1, 2, 3, 4].map((x, index) => (
     <Image
-      src={"/STAC/images/bathroom/" + x + ".jpg"}
+      src={"/images/bathroom/" + x + ".jpg"}
       radius={"lg"}
       key={index}
       // h={400}
@@ -29,7 +29,7 @@ export default function Home({
   ));
   const commonAreaImages = [1, 2, 3, 4].map((x, index) => (
     <Image
-      src={"/STAC/images/common-areas/" + x + ".jpg"}
+      src={"/images/common-areas/" + x + ".jpg"}
       radius={"lg"}
       key={index}
       // h={400}

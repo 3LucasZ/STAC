@@ -72,7 +72,7 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
         {/* <Box size={28}></Box> */}
-        <Image h={40} src={"/STAC/images/mini-logo.png"} />
+        <Image h={40} src={"/images/mini-logo.png"} />
         <Group gap={5} visibleFrom="xs">
           {items(false)}
         </Group>

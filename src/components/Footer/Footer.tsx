@@ -40,9 +40,9 @@ export function FooterLinks({ locale }: { locale: string }) {
     {
       title: t.get(data.contacts),
       links: [
-        { label: "WeChat", link: "/STAC/" + locale + "/contact" },
-        { label: "Line", link: "/STAC/" + locale + "/contact" },
-        { label: "WhatsApp", link: "/STAC/" + locale + "/contact" },
+        { label: "WeChat", link: "/" + locale + "/contact" },
+        { label: "Line", link: "/" + locale + "/contact" },
+        { label: "WhatsApp", link: "/" + locale + "/contact" },
       ],
     },
     {
@@ -79,7 +79,7 @@ export function FooterLinks({ locale }: { locale: string }) {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          <Image src="/STAC/images/logo.png" h={80} w={"100%"} />
+          <Image src="/images/logo.png" h={80} w={"100%"} />
           <Text size="xs" c="dimmed" className={classes.description}>
             {/* Apartments for students. */}
           </Text>

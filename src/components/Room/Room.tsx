@@ -59,11 +59,7 @@ export function Room({
             {items.map((item, index) => (
               <Image
                 src={
-                  "/STAC/images/rooms/" +
-                  name.toLowerCase() +
-                  "/" +
-                  item +
-                  ".jpg"
+                  "/images/rooms/" + name.toLowerCase() + "/" + item + ".jpg"
                 }
                 key={index}
               ></Image>
@@ -81,7 +77,7 @@ export function Room({
       >
         <Card.Section style={{ overflow: "hidden" }}>
           <Image
-            src={"/STAC/images/rooms/" + name.toLowerCase() + "/1.jpg"}
+            src={"/images/rooms/" + name.toLowerCase() + "/1.jpg"}
             height={400}
             alt={name}
             className={classes.image}

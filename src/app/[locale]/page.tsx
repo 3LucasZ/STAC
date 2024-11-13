@@ -67,7 +67,7 @@ export default function Page({ params: { locale } }: PageProps) {
         actionBtnText={t.get(data.actionBtnText)}
         locale={locale}
       />
-      {/* <Image src="/STAC/images/logo.png" mah={400} w={"auto"} fit="contain" /> */}
+      {/* <Image src="/images/logo.png" mah={400} w={"auto"} fit="contain" /> */}
       <Container
         // fluid maw={{ base: "100%", sm: "90%", md: "80%" }}
         size={"lg"}
@@ -81,7 +81,7 @@ export default function Page({ params: { locale } }: PageProps) {
           <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={20}>
             <Box h={"100%"}>
               <Image
-                src="/STAC/images/rooms/generic.jpg"
+                src="/images/rooms/generic.jpg"
                 fit="cover"
                 radius={"lg"}
                 h={"100%"}
@@ -114,7 +114,7 @@ export default function Page({ params: { locale } }: PageProps) {
             h="auto"
             // style={{ overflow: "hidden" }}
           >
-            <Image360 url="/STAC/images/360-interior.jpg" />
+            <Image360 url="/images/360-interior.jpg" />
           </Box>
 
           <Title c={"yellow"} ta={"center"}>
@@ -131,7 +131,7 @@ export default function Page({ params: { locale } }: PageProps) {
               <Text size="xl">{t.get(data.partners.text)}</Text>
             </Stack>
             <Image
-              src="/STAC/images/deanza.jpg"
+              src="/images/deanza.jpg"
               fit="cover"
               h="100%"
               radius={"lg"}
