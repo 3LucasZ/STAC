@@ -23,10 +23,14 @@ export function Room({
   locale: string;
 }) {
   const [opened, { open, close }] = useDisclosure(false);
-  var items: number[] = [];
+  var items: number[] | string[] = [];
   switch (name.toLowerCase()) {
     case "harmony":
-      items = [1];
+      // items = [1];
+      items = [
+        "https://placehold.co/600x400?text=Coming soon!",
+        "https://placehold.co/600x400?text=Coming soon!",
+      ];
       break;
     case "jade":
       items = [0, 1, 2, 3, 4];
@@ -41,6 +45,16 @@ export function Room({
       items = [0, 1, 2, 3];
       break;
   }
+  const imgs = items.map((item, index) => (
+    <Image
+      src={
+        typeof item === "number"
+          ? "/images/rooms/" + name.toLowerCase() + "/" + item + ".jpg"
+          : item
+      }
+      key={index}
+    ></Image>
+  ));
 
   return (
     <>
@@ -55,16 +69,7 @@ export function Room({
         {/* Modal content */}
         <Stack>
           <Title ta={"center"}>{name}</Title>
-          <SimpleGrid>
-            {items.map((item, index) => (
-              <Image
-                src={
-                  "/images/rooms/" + name.toLowerCase() + "/" + item + ".jpg"
-                }
-                key={index}
-              ></Image>
-            ))}
-          </SimpleGrid>
+          <SimpleGrid>{imgs}</SimpleGrid>
         </Stack>
       </Modal>
       <Card
@@ -77,7 +82,7 @@ export function Room({
       >
         <Card.Section style={{ overflow: "hidden" }}>
           <Image
-            src={"/images/rooms/" + name.toLowerCase() + "/1.jpg"}
+            src={imgs[1].props.src}
             height={400}
             alt={name}
             className={classes.image}
