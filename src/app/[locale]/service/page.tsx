@@ -49,11 +49,14 @@ export default function Home({
           {t.get(data.title)}
         </Title>
 
+        <Text size="lg">{t.get(data.subtitle)}</Text>
+
         <List>{checklist}</List>
 
         <Title ta="center" py={20} c={"blue"}>
           {t.get(data.a.title)}
         </Title>
+
         <SimpleGrid cols={{ base: 1, sm: 2, md: 2 }} spacing={30}>
           {commonAreaImages}
         </SimpleGrid>

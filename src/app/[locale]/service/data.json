@@ -1,68 +1,72 @@
 {
   "title": {
     "en": "Additional Services",
-    "zh": "附加服務"
+    "zh": "服务"
+  },
+  "subtitle": {
+    "en": "STAC provides you with high-quality services to help you smoothly adapt to study and life.",
+    "zh": "斯坦科管理中心为您提供优质的服务，帮助您缓解在国外的异域感并顺利适应新环境下的学习，生活。使您学会在美国独立处理学习生活中的大小事物。当您选择住在这里，您可以有一个全新的开始并结交许多新的同学朋友。"
   },
   "services": [
     {
       "en": "Airport pickup is provided for each student upon their arrival in the San Francisco area, USA.",
-      "zh": "每位學生抵達美國舊金山地區後都會獲得機場接送服務。"
+      "zh": "可提供的附加服务有："
     },
     {
       "en": "Monthly reports can be requested by parents.",
-      "zh": "家長可以要求每月報告。"
+      "zh": "机场接送服务"
     },
     {
       "en": "Orientation and in-person training for students about living in America",
-      "zh": "為學生提供有關美國生活的指導和現場培訓"
+      "zh": "交通安排"
     },
     {
       "en": "Initial shopping trip for food and necessities.",
-      "zh": "最初的食品和必需品購物之旅。"
+      "zh": "生活指导"
     },
     {
       "en": "Area orientation, guidance on transportation to the school.",
-      "zh": "區域定位、到校交通指導。"
+      "zh": "法律咨询"
     },
     {
       "en": "Help to become familiar with the campus as well as school policies.",
-      "zh": "幫助熟悉校園以及學校政策。"
+      "zh": "监护服务"
     },
     {
       "en": "Assistance with opening a bank account and setting up a cell phone.",
-      "zh": "協助開設銀行帳戶和設定手機。"
+      "zh": "特制的生活安置服务 及针对家长的报告服务和紧急情况服务。"
     },
     {
       "en": "24/7 staff on-site to ensure a smooth transition for students in their college life and studies.",
-      "zh": "24/7 工作人員現場服務，確保學生順利過渡大學生活與學習。"
+      "zh": "其中特制的生活安置服务包括："
     },
     {
       "en": "Individual grades management and advice available upon request",
-      "zh": "可根據要求提供單獨的成績管理和建議"
+      "zh": "初次食品和生活必需品的购物。"
     },
     {
       "en": "Legal advice if the student encounters any legal issues including school suspension.",
-      "zh": "如果學生遇到任何法律問題（包括停學），提供法律建議。"
+      "zh": "当地介绍，公共交通指导。"
     },
     {
       "en": "24/7 services assist students and their parents in case of emergencies.",
-      "zh": "24/7 服務在緊急情況下為學生及其家長提供協助。"
+      "zh": "帮助熟悉校园及学校政策。"
     },
     {
       "en": "Guardianship services are available for individuals under 18 years old.",
-      "zh": "監護服務適用於 18 歲以下的個人。"
+      "zh": "协助开设银行账户及办理手机号服务。"
     }
   ],
   "a": {
     "title": {
       "en": "Common Areas",
-      "zh": "平面圖"
+      "zh": "公共区域图片"
     }
   },
   "b": {
     "title": {
       "en": "Bathrooms",
-      "zh": "平面圖"
+      "zh": "部分卫生间图片"
     }
   },
   "c": {
