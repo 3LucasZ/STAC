@@ -11,6 +11,7 @@ export default function Home({
     { title: "WeChat", src: "/images/socials/wechat.png" },
     { title: "WhatsApp", src: "/images/socials/whatsapp.png" },
     { title: "LINE", src: "/images/socials/line.jpg" },
+    { title: "Twitter (X)", src: "/images/socials/twitter.jpg" },
   ];
   const contactItems = contacts.map((contact, index) => (
     <Stack align="center" key={index}>

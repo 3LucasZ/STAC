@@ -43,6 +43,7 @@ export function FooterLinks({ locale }: { locale: string }) {
         { label: "WeChat", link: "/" + locale + "/contact" },
         { label: "Line", link: "/" + locale + "/contact" },
         { label: "WhatsApp", link: "/" + locale + "/contact" },
+        { label: "Twitter (X)", link: "/" + locale + "/contact" },
       ],
     },
     {
@@ -51,7 +52,7 @@ export function FooterLinks({ locale }: { locale: string }) {
     },
     {
       title: t.get(data.email),
-      links: [{ label: "dongli@stac.com", link: "NONE" }],
+      links: [{ label: "info@stac.com", link: "NONE" }],
     },
   ];
   const groups = content.map((group) => {

@@ -38,7 +38,7 @@ export function ContactIconsList({ locale }: { locale: string }) {
   const MOCKDATA = [
     {
       title: t.get(data.label.email),
-      description: "dongli@stac.com",
+      description: "info@stac-center.com",
       icon: IconAt,
     },
     {

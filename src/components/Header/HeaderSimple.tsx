@@ -63,9 +63,11 @@ export function HeaderSimple({ locale }: HeaderSimpleProps) {
       : pathname.replace("zh", "en");
 
   const languagePicker = (
-    <Text onClick={() => router.push(newPathname)} c={"blue"} size="lg">
-      {locale == "en" ? "English" : "中文"}
-    </Text>
+    <Group onClick={() => router.push(newPathname)} c={"blue"} gap={8}>
+      <Text size="lg">English</Text>
+      <Text>/</Text>
+      <Text size="lg">中文</Text>
+    </Group>
   );
 
   return (
