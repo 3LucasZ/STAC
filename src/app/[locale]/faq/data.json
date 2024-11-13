@@ -1,187 +1,187 @@
 {
   "title": {
     "en": "Frequently Asked Questions",
-    "zh": "常見問題解答"
+    "zh": "常见问题"
   },
   "faqs": [
     {
       "q": {
         "en": "How do I pay the rent?",
-        "zh": "我該如何支付租金?"
+        "zh": "如何支付房租？"
       },
       "a": {
         "en": "The rent can be paid by check or cash in US dollars. If you wish to make a payment by credit card or pay in RMB via bank transfer or Alipay, an additional 5% service fee will apply.",
-        "zh": "租金可以透過支票或美元現金支付。如果您希望透過信用卡付款或透過銀行轉帳或支付寶以人民幣付款，將收取額外5%的服務費。"
+        "zh": "房租可以用支票或现金支付美金。如果您希望使用信用卡支付房租，或通过银行转账或支付宝以人民币形式支付，则需支付额外的5%服务费。"
       }
     },
     {
       "q": {
         "en": "When do I pay the rent?",
-        "zh": "我什麼時候付房租？"
+        "zh": "何时支付房租？"
       },
       "a": {
         "en": "The deposit and 1st month rent will be paid upon the first arrival at the dormitory. The rent for the following month must be paid before the same date next month; otherwise, the access card will be disabled, and you will not be able to enter your room.",
-        "zh": "押金和第一個月的租金將在第一次抵達宿舍時支付。下個月的租金必須在下個月的同一日期之前支付；否則，門禁卡將被停用，您將無法進入房間。"
+        "zh": "首次办理入住时需支付押金和第一个月的房租。下一月的房租必须在次月相同日期之前支付；否则，门禁卡将被停用，您将无法进入房间。"
       }
     },
     {
       "q": {
         "en": "What should I prepare for moving in?",
-        "zh": "搬入時我該準備什麼？"
+        "zh": "我需要为入住准备什么？"
       },
       "a": {
         "en": "Please bring your personal daily essentials, including a pillow, blanket, sheets, toiletries, and more.",
-        "zh": "請攜帶您的個人日常必需品，包括枕頭、毛毯、床單、盥洗用品等。"
+        "zh": "请携带您的个人日常用品，包括枕头、毛毯、床单、洗漱用品等。"
       }
     },
     {
       "q": {
         "en": "If I no longer need airport pick-up or my travel plans change, what should I do?",
-        "zh": "如果我不再需要機場接送或我的旅行計畫發生變化，我該怎麼辦？"
+        "zh": "如果我不再需要机场接送或我的旅行计划发生变化，该怎么办？"
       },
       "a": {
         "en": "Please contact STAC as soon as possible to inform them of the changes. If you forget to reach out, it may result in thecancellation of your accommodation, and all fees and deposits will be non-refundable.",
-        "zh": "請盡快聯絡 STAC 以告知其變更。如果您忘記聯繫，可能會導致您的住宿被取消，並且所有費用和押金將不予退還。"
+        "zh": "请尽快联系STAC告知更改。如果您未及时通知，可能会导致您的住宿被取消，所有费用和押金将不予退还。"
       }
     },
     {
       "q": {
         "en": "Why do I need to purchase medical insurance before arriving at STAC dorm?",
-        "zh": "為什麼我在到達STAC宿舍之前需要購買醫療保險？"
+        "zh": "为什么在入住STAC公寓前需要购买医疗保险？"
       },
       "a": {
         "en": "Medical insurance is required to ensure you have access to necessary healthcare services during your stay. You must obtain medical insurance or travel insurance to cover you during the airport pick-up and the period before you purchase your education provider's designated health insurance at your school.",
-        "zh": "需要醫療保險以確保您在住宿期間能夠獲得必要的醫療保健服務。您必須購買醫療保險或旅遊保險，以便在機場接機期間以及在學校購買教育機構指定的健康保險之前為您提供保障。"
+        "zh": "医疗保险是为了确保您在入住期间能够获得必要的医疗服务。您必须购买医疗保险或旅行保险以确保您在拿到学校健康保险之前的这段居住时间和机场接送等服务有医疗保证。"
       }
     },
     {
       "q": {
         "en": "Why do I need to purchase renter's insurance during my stay?",
-        "zh": "為什麼我住宿期間需要購買房客保險？"
+        "zh": "为什么需要购买租客保险？"
       },
       "a": {
         "en": "Renter's insurance is important because it protects your personal  belongings in case of theft, damage, or loss due to events like fire  or flooding. It also provides liability coverage, which can protect  you if someone is injured in your rented space.",
-        "zh": "承租人的保險很重要，因為它可以保護您的個人物品，以防因火災或洪水等事件而被盜、損壞或遺失。它還提供責任保險，如果有人在您租用的空間中受傷，它可以為您提供保護。"
+        "zh": "租客保险很重要，因为它可以在发生盗窃、损坏或火灾、洪水等事件或物品丢失时保护您的个人财物。它同时提供责任保险，如果有人在您的租住房间受伤，保险可以为您提供保护。"
       }
     },
     {
       "q": {
         "en": "What should I do if I want to move out or renew my lease when it ends?",
-        "zh": "如果我想在租約結束時搬出或續簽，我該怎麼辦？"
+        "zh": "如果我想在租约结束时搬出或续租，该怎么办？"
       },
       "a": {
         "en": "Please notify STAC of your decision (to renew or move out) at least  30 days before your lease ends. Kindly provide this information in  writing or via email for clarity. Failure to notify us of your  intent to move out will result in a charge for a 30-day rent  extension. Failure to notify us of your intent to renew may result  in the unavailability of your room.",
-        "zh": "請在租約結束前至少 30 天通知 STAC 您的決定（續約或搬出）。為了清楚起見，請以書面或電子郵件提供此資訊。未能通知我們您的搬出意圖將導致收取 30 天延期租金的費用。如果未能通知我們您的續訂意圖，可能會導致您的房間無法使用。"
+        "zh": "请以书面或电子邮件形式在租约结束前至少30天通知STAC您的决定（续租或搬出）。如果未能通知我们搬出意向，将导致收取下一个月的租金。未能通知我们续租意向，也可能导致您的房间无法继续续住。"
       }
     },
     {
       "q": {
         "en": "What should I do if my lease cannot be renewed due to the  unavailability of the room and other reasons?",
-        "zh": "如果因為房間不足等原因無法續租怎麼辦？"
+        "zh": "如果由于没有空房间或其他原因无法续租，我该怎么办？"
       },
       "a": {
         "en": "Please start looking for new housing options as soon as possible to  find a suitable place. If you stay beyond the lease term, please  check with STAC for the daily rate for your room. If you need STAC  to assist you in finding a room in the local area, a service fee of  $750 will apply.",
-        "zh": "請盡快開始尋找新的住房選擇，以找到合適的地方。如果您的住宿超過租賃期限，請向 STAC 查詢您房間的每日房價。如果您需要STAC協助您在當地尋找房間，則需支付750美元的服務費。"
+        "zh": "请尽快开始寻找新的住所。如果您在租期结束后继续居住几天，请咨询STAC关于房间的日租费。如果您需要STAC协助寻找当地的房间，需缴纳$750的服务费。"
       }
     },
     {
       "q": {
         "en": "How far is the STAC dorm from De Anza College?",
-        "zh": "STAC 宿舍離 De Anza College 有多遠？"
+        "zh": "STAC公寓距离De Anza学院有多远？"
       },
       "a": {
         "en": "The distance from STAC dorm to De Anza College is approximately 5  miles. It usually takes about 10-15 minutes by car and around 30  minutes by bus.",
-        "zh": "從 STAC 宿舍到 De Anza 學院的距離約為 5 英里。通常開車約 10-15 分鐘，搭乘巴士約30分鐘。"
+        "zh": "STAC公寓距离De Anza学院大约5英里。通常开车需要约10-15分钟，乘坐公交车大约需要30分钟。"
       }
     },
     {
       "q": {
         "en": "What documents do I need to open a local bank account in the U.S.?",
-        "zh": "在美國開設本地銀行帳戶需要什麼文件？"
+        "zh": "在美国开设本地银行账户需要哪些文件？"
       },
       "a": {
         "en": "Passport, A photo ID (such as a driver's license or student ID),Email address, local Phone number.",
-        "zh": "護照、附照片的身份證件（例如駕照或學生證）、電子郵件地址、本地電話號碼。"
+        "zh": "护照、一份带照片的身份证明（如驾驶执照或学生证）、电子邮件地址、本地电话号码。"
       }
     },
     {
       "q": {
         "en": "How should I handle my meals?",
-        "zh": "我應該如何處理我的膳食？"
+        "zh": "我应该如何解决饮食问题？"
       },
       "a": {
         "en": "You can either order takeout or cook for yourself using the common kitchen on the first floor.",
-        "zh": "您可以叫外賣，也可以使用一樓的公用廚房自己煮飯。。"
+        "zh": "您可以选择订购外卖，或者使用一楼的公共厨房自行烹饪。"
       }
     },
     {
       "q": {
         "en": "Can my friends or family stay overnight to visit me?",
-        "zh": "我的朋友或家人可以過夜探望我嗎？"
+        "zh": "我的朋友或家人可以留宿吗？"
       },
       "a": {
         "en": "Students are not permitted to have friends or family stay overnight.  For special circumstances, please contact the STAC staff for  guidance.",
-        "zh": "學生不得讓朋友或家人過夜。  如有特殊情況，請聯絡STAC工作人員指導。"
+        "zh": "学生不允许朋友或家人留宿。如有特殊情况，请联系STAC工作人员。"
       }
     },
     {
       "q": {
         "en": "Is there internet access in the dormitory?",
-        "zh": "宿舍裡有網路嗎？"
+        "zh": "公寓有公共网络吗？"
       },
       "a": {
         "en": "Yes, the dormitory has free public Wi-Fi. However, the internet is  primarily for study purposes. The public Wi-Fi is intended for all tenants and should not be used for downloading music, movies, or playing games, as this may jeopardize the service. You are welcome to set up your own internet service to meet your needs.",
-        "zh": "是的，宿舍有免費公共Wi-Fi。然而，互聯網主要用於學習目的。公共 Wi-Fi 供所有租戶使用，不應用於下載音樂、電影或玩遊戲，因為這可能會危及服務。歡迎您建立自己的網路服務來滿足您的需求。"
+        "zh": "是的，中心提供免费公共Wi-Fi。然而，网络公共Wi-Fi仅供中心所有住户用于学习目的，请勿用于下载音乐、电影或玩游戏，因为会影响全中心的网络速度。当然您可以根据自己需要，向网络公司申请安装自己的网络。"
       }
     },
     {
       "q": {
         "en": "What will be in my dorm room?",
-        "zh": "我的宿舍裡會有什麼？"
+        "zh": "我的公寓房间里有什么配置？"
       },
       "a": {
         "en": "All students will have a bed, mattress, desk, chair, wardrobe, and mini fridge. If you have specific requests for your room, you will need to purchase those items yourself. In most cases, students share a bathroom with one other person.",
-        "zh": "所有學生將擁有床、床墊、書桌、椅子、衣櫃和迷你冰箱。如果您對房間有特殊要求，則需要自行購買這些物品。在大多數情況下，學生與另一個人共用一間浴室。"
+        "zh": "每位学生的房间内都会配备床、床垫、书桌、椅子、衣柜和小冰箱。如果您有特定的需求，需要自行购买所需物品。大多数情况下，学生会与另一房间共用一个浴室。"
       }
     },
     {
       "q": {
         "en": "Am I allowed to change my room during my stay?",
-        "zh": "住宿期間我可以更換房間嗎？"
+        "zh": "在入住期间我可以更换房间吗？"
       },
       "a": {
         "en": "Students may request to change their room once during their stay for valid reasons, but this request may be denied due to occupancy or other factors. A room change requires signing a new lease agreement and covering related costs, such as application fees.",
-        "zh": "學生在住宿期間可以因正當理由要求更換房間一次，但該請求可能會因入住情況或其他因素而被拒絕。更換房間需要簽署新的租賃協議並支付相關費用，例如申請費。"
+        "zh": "学生在入住期间可因正当理由申请更换房间一次，但由于入住情况或其他因素，有可能无法实现。如果可以更换房间则需要签署新的租赁协议，并支付相关费用，如申请费。"
       }
     },
     {
       "q": {
         "en": "What are the house rules for the STAC dormitory? What happens if I violate them?",
-        "zh": "STAC宿舍的入住規則是什麼？如果我違反它們會怎樣？"
+        "zh": "STAC公寓的住宿规定是什么？如果我违反了规定会怎么样？"
       },
       "a": {
         "en": "The house rules outline the requirements for living in the STAC dormitory. Please read through the lease agreement and house rules carefully. If students violate the lease agreements or STAC’s house rules, they will be notified and asked to correct the violation. If the same or another violation occurs or continues, the resident will receive written notice that further violations may result in eviction.",
-        "zh": "住宿規則概述了 STAC 宿舍的居住要求。請仔細閱讀租賃協議和房屋規則。如果學生違反租賃協議或 STAC 的住宿規則，他們將收到通知並要求糾正違規行為。如果發生或繼續發生相同或其他違規行為，居民將收到書面通知，表明進一步的違規行為可能會導致被驅逐。"
+        "zh": "请仔细阅读并遵守租赁协议和STAC公寓规定及要求。如果学生违反了租赁协议或STAC的住宿规定，将会被通知并要求纠正其违规行为。如果相同或其他违规行为再次发生，住户将收到书面通知。如违规行为持续发生就可能导致租约解除并勒令搬离。"
       }
     },
     {
       "q": {
         "en": "What could cause my lease to be terminated?",
-        "zh": "什麼會導致我的租約被終止？"
+        "zh": "什么样的行为会导致我的租约被终止？"
       },
       "a": {
         "en": "If students violate lease agreements, STAC’s house rules, fail to comply with management requirements, or are disrespectful to STAC management staff, it may lead to termination of the lease. This includes behaviors such as theft, harassment, difficulties in getting along with other international students, violent behavior, underage drinking for students under 21, lying or committing fraud, and engaging in any illegal activities. Such actions may result in eviction without any refund.",
-        "zh": "如果學生違反租賃協議、STAC 的宿舍規則、不遵守管理要求或不尊重 STAC 管理人員，可能會導致租約終止。這包括盜竊、騷擾、與其他國際學生相處困難、暴力行為、21 歲以下學生未成年飲酒、撒謊或欺詐以及從事任何非法活動等行為。此類行為可能會導致驅逐且不予退款。"
+        "zh": "如果学生违反租赁协议、STAC的住宿规定、不遵守管理要求，或对STAC管理人员不尊重，就会导致解除租约并被勒令搬离且不退还任何费用。这包括不限于盗窃、骚扰、辱骂他人、打架、撒谎、欺诈、21岁以下学生饮酒，以及参与任何非法活动。"
       }
     },
     {
       "q": {
         "en": "In case of an emergency, who should I contact?",
-        "zh": "如果發生緊急情況，我該聯絡誰？"
+        "zh": "紧急情况下，我应该联系谁？"
       },
       "a": {
         "en": "In an emergency, you should call 911 and also contact STAC staff at the same time.",
-        "zh": "遇到緊急情況，您應該撥打911，同時聯絡STAC工作人員。"
+        "zh": "在紧急情况下，请立即拨打911，并同时联系STAC工作人员。"
       }
     }
   ]
