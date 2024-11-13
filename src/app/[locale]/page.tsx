@@ -10,6 +10,7 @@ import {
   Center,
   SimpleGrid,
   List,
+  AspectRatio,
 } from "@mantine/core";
 import { GoogleMapsEmbed } from "@next/third-parties/google";
 
@@ -114,7 +115,16 @@ export default function Page({ params: { locale } }: PageProps) {
             h="auto"
             // style={{ overflow: "hidden" }}
           >
-            <Image360 url="/images/360-interior.jpg" />
+            {/* <Image360 url="/images/360-interior.jpg" /> */}
+            <AspectRatio ratio={16 / 9}>
+              <iframe
+                src="/images/sweep-interior.mp4"
+                title="Video player"
+                style={{ border: 0 }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </AspectRatio>
           </Box>
 
           <Title c={"yellow"} ta={"center"}>
