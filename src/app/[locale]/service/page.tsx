@@ -49,7 +49,7 @@ export default function Home({
           {t.get(data.title)}
         </Title>
 
-        <Text size="lg">{t.get(data.subtitle)}</Text>
+        <Text size="xl">{t.get(data.subtitle)}</Text>
 
         <List>{checklist}</List>
 

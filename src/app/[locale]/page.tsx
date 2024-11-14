@@ -52,6 +52,7 @@ export default function Page({ params: { locale } }: PageProps) {
       />
     );
   });
+  rooms.pop();
   const roomsWrapper = (
     <Center>
       <SimpleGrid cols={{ base: 1, sm: 2, md: 2 }} spacing={40}>

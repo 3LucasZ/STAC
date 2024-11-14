@@ -1,6 +1,6 @@
 {
   "title": {
-    "en": "Dorm Applications",
+    "en": "Applications",
     "zh": "申请表格"
   },
   "subtitle": {
@@ -33,7 +33,7 @@
       "zh": "提交费用的信用卡授权书。"
     },
     {
-      "en": "Submit this Parental Release form for a minor student along with the refundable credit card authorization for the Guardianship Service Charge (if you are under 18 years old).",
+      "en": "Submit this Parental Release form for a minor student along with the credit card authorization for the Guardianship Service Charge and application fees (if you are under 18 years old).",
       "zh": "如果您未满18岁，请提交未成年人家长授权书以及监护服务费和申请费信用卡授权书。"
     }
   ],
