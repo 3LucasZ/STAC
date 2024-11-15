@@ -33,10 +33,15 @@ export default function Page({ params: { locale } }: PageProps) {
   const t = new Translator(locale);
 
   // luxuries
-  const luxuries = data.luxuries.map((luxury, index) => {
+  const luxuries = t.get(data.luxuries).map((luxury: string, index: number) => {
     return (
-      <List.Item key={index}>
-        <Text size="xl">{t.get(luxury)}</Text>
+      <List.Item
+        key={index}
+        style={{
+          listStyleType: t.get(data.luxuries).length == 1 ? "none" : "initial",
+        }}
+      >
+        <Text size="xl">{luxury}</Text>
       </List.Item>
     );
   });

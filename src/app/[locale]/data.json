@@ -40,43 +40,27 @@
   "luxury": {
     "title": {
       "en": "Luxurious",
-      "zh": "流的公寓环境"
+      "zh": "一流的公寓环境"
     },
     "text": {
       "en": "High-quality, affordable private spaces where you can enjoy comfortable accommodation.",
       "zh": "斯坦科留学管理中心公寓为国际留学生提供舒适，安全，良好的生活环境。"
     }
   },
-  "luxuries": [
-    {
-      "en": "Free public Wi-Fi",
-      "zh": "全建筑空调"
-    },
-    {
-      "en": "Monthly reports can be requested by parents",
-      "zh": "免费公共Wi-Fi覆盖"
-    },
-    {
-      "en": "Fully furnished",
-      "zh": "出入使用门禁卡管理"
-    },
-    {
-      "en": "Kitchen, dining room, and laundry facilities are communal",
-      "zh": "并附有公共厨房"
-    },
-    {
-      "en": "Own Refrigerator",
-      "zh": "餐厅和洗衣房"
-    },
-    {
-      "en": "Air conditioning",
-      "zh": "公寓房内配有全套家具"
-    },
-    {
-      "en": "Key card access",
-      "zh": "个人小冰箱"
-    }
-  ],
+  "luxuries": {
+    "en": [
+      "Free public Wi-Fi",
+      "Monthly reports can be requested by parents",
+      "Fully furnished",
+      "Kitchen, dining room, and laundry facilities are communal",
+      "Own Refrigerator",
+      "Air conditioning",
+      "Key card access"
+    ],
+    "zh": [
+      "全建筑空调, 免费公共Wi-Fi覆盖, 出入使用门禁卡管理, 并附有公共厨房、餐厅和洗衣房。公寓房内配有全套家具,个人小冰箱。"
+    ]
+  },
   "roomTypes": {
     "title": {
       "en": "Room types",
