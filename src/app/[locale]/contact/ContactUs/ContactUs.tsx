@@ -29,6 +29,7 @@ export function ContactUs({ locale }: { locale: string }) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const icons = social.map((Icon, index) => (
     <ActionIcon
       key={index}
@@ -52,24 +53,27 @@ export function ContactUs({ locale }: { locale: string }) {
     xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
     xhr.onreadystatechange = function () {
-      if (xhr.readyState === 4 && xhr.status === 200) {
-        setEmail("");
-        setName("");
-        setMsg("");
-        notifications.show({
-          color: "green",
-          title: "Thank you!",
-          message: "We will contact you back soon!",
-          autoClose: 8000,
-        });
-      } else {
-        notifications.show({
-          color: "red",
-          title: "Server error",
-          message:
-            "Sorry, our email service is down right now. Please email us directly instead.",
-          autoClose: 8000,
-        });
+      if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+          setEmail("");
+          setName("");
+          setMsg("");
+          notifications.show({
+            color: "green",
+            title: "Thank you!",
+            message: "We will contact you back soon!",
+            autoClose: 8000,
+          });
+        } else {
+          notifications.show({
+            color: "red",
+            title: "Server error " + xhr.status,
+            message:
+              "Sorry, our email service is down right now. Please email us directly instead.",
+            autoClose: 8000,
+          });
+        }
+        setIsLoading(false);
       }
     };
     // url encode form data for sending as post data
@@ -130,8 +134,10 @@ export function ContactUs({ locale }: { locale: string }) {
             <Button
               className={classes.control}
               onClick={() => {
+                setIsLoading(true);
                 sendEmail();
               }}
+              loading={isLoading}
             >
               {t.get(data.actionBtn)}
             </Button>
