@@ -7,39 +7,20 @@
     "en": "STAC provides you with high-quality services to help you smoothly adapt to study and life.",
     "zh": "斯坦科管理中心为您提供优质的服务，帮助您缓解在国外的异域感并顺利适应新环境下的学习，生活。使您学会在美国独立处理学习生活中的大小事物。当您选择住在这里，您可以有一个全新的开始并结交许多新的同学朋友。"
   },
+  "part1": {
+    "en": [
+      "Airport pickup is provided for each student upon their arrival in the San Francisco area, USA.",
+      "Monthly reports can be requested by parents.",
+      "Orientation and in-person training for students about living in America",
+      "Initial shopping trip for food and necessities.",
+      "Area orientation, guidance on transportation to the school.",
+      "Help to become familiar with the campus as well as school policies.",
+      "Assistance with opening a bank account and setting up a cell phone.",
+      "24/7 staff on-site to ensure a smooth transition for students in their college life and studies."
+    ],
+    "zh": "可提供的附加服务有：机场接送服务，交通安排，生活指导，法律咨询，监护服务，特制的生活安置服务 及针对家长的报告服务和紧急情况服务。其中特制的生活安置服务包括："
+  },
   "services": [
-    {
-      "en": "Airport pickup is provided for each student upon their arrival in the San Francisco area, USA.",
-      "zh": "可提供的附加服务有："
-    },
-    {
-      "en": "Monthly reports can be requested by parents.",
-      "zh": "机场接送服务"
-    },
-    {
-      "en": "Orientation and in-person training for students about living in America",
-      "zh": "交通安排"
-    },
-    {
-      "en": "Initial shopping trip for food and necessities.",
-      "zh": "生活指导"
-    },
-    {
-      "en": "Area orientation, guidance on transportation to the school.",
-      "zh": "法律咨询"
-    },
-    {
-      "en": "Help to become familiar with the campus as well as school policies.",
-      "zh": "监护服务"
-    },
-    {
-      "en": "Assistance with opening a bank account and setting up a cell phone.",
-      "zh": "特制的生活安置服务 及针对家长的报告服务和紧急情况服务。"
-    },
-    {
-      "en": "24/7 staff on-site to ensure a smooth transition for students in their college life and studies.",
-      "zh": "其中特制的生活安置服务包括："
-    },
     {
       "en": "Individual grades management and advice available upon request",
       "zh": "初次食品和生活必需品的购物。"

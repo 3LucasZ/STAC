@@ -36,6 +36,19 @@ export default function Home({
     />
   ));
 
+  const part1 =
+    locale == "en" ? (
+      <List>
+        {data.part1.en.map((item, index) => (
+          <List.Item key={index}>
+            <Text size="xl">{item}</Text>
+          </List.Item>
+        ))}
+      </List>
+    ) : (
+      <Text size="xl">{data.part1.zh}</Text>
+    );
+
   const checklist = data.services.map((item, index) => (
     <List.Item key={index}>
       <Text size="xl">{t.get(item)}</Text>
@@ -51,6 +64,7 @@ export default function Home({
 
         <Text size="xl">{t.get(data.subtitle)}</Text>
 
+        {part1}
         <List>{checklist}</List>
 
         <Title ta="center" py={20} c={"blue"}>
