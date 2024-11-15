@@ -19,10 +19,16 @@ import { ContactIconsList } from "./ContactIcons";
 import { Translator } from "@/utils";
 import data from "../data.json";
 
+import { useState } from "react";
+import { notifications } from "@mantine/notifications";
+
 const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
 
 export function ContactUs({ locale }: { locale: string }) {
   const t = new Translator(locale);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [msg, setMsg] = useState("");
   const icons = social.map((Icon, index) => (
     <ActionIcon
       key={index}
@@ -33,6 +39,47 @@ export function ContactUs({ locale }: { locale: string }) {
       <Icon size="1.4rem" stroke={1.5} />
     </ActionIcon>
   ));
+
+  function sendEmail() {
+    const data = {
+      name: name,
+      message: msg,
+      email: email,
+    };
+    const url =
+      "https://script.google.com/macros/s/AKfycbwwqOGah0t6M5vPT3YLCbInjRaVYGGy6UYERyw0rSUcFGAyZ0YqBmjwXReG37CfwD2B6A/exec";
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        setEmail("");
+        setName("");
+        setMsg("");
+        notifications.show({
+          color: "green",
+          title: "Thank you!",
+          message: "We will contact you back soon!",
+          autoClose: 8000,
+        });
+      } else {
+        notifications.show({
+          color: "red",
+          title: "Server error",
+          message:
+            "Sorry, our email service is down right now. Please email us directly instead.",
+          autoClose: 8000,
+        });
+      }
+    };
+    // url encode form data for sending as post data
+    var encoded = Object.keys(data)
+      .map(function (k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+      })
+      .join("&");
+    xhr.send(encoded);
+  }
 
   return (
     <div className={classes.wrapper}>
@@ -52,11 +99,15 @@ export function ContactUs({ locale }: { locale: string }) {
             label={t.get(data.label.email)}
             // placeholder="your@email.com"
             required
+            onChange={(x) => setEmail(x.target.value)}
+            value={email}
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
           <TextInput
             label={t.get(data.label.name)}
             // placeholder="your name"
+            onChange={(x) => setName(x.target.value)}
+            value={name}
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
@@ -64,13 +115,22 @@ export function ContactUs({ locale }: { locale: string }) {
             required
             label={t.get(data.label.message)}
             // placeholder="your message"
+            onChange={(x) => setMsg(x.target.value)}
+            value={msg}
             minRows={4}
             mt="md"
             classNames={{ input: classes.input, label: classes.inputLabel }}
           />
 
           <Group justify="flex-end" mt="md">
-            <Button className={classes.control}>{t.get(data.actionBtn)}</Button>
+            <Button
+              className={classes.control}
+              onClick={() => {
+                sendEmail();
+              }}
+            >
+              {t.get(data.actionBtn)}
+            </Button>
           </Group>
         </div>
       </SimpleGrid>
