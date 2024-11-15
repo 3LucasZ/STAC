@@ -75,7 +75,11 @@ export function ContactUs({ locale }: { locale: string }) {
     // url encode form data for sending as post data
     var encoded = Object.keys(data)
       .map(function (k) {
-        return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+        return (
+          encodeURIComponent(k) +
+          "=" +
+          encodeURIComponent(data[k as keyof typeof data])
+        );
       })
       .join("&");
     xhr.send(encoded);
