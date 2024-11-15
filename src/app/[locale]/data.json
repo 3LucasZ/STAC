@@ -3,9 +3,15 @@
     "en": "STAC Center",
     "zh": "斯坦科留学管理服务中心"
   },
-  "subtitle": {
-    "en": "The Best Dormitory",
-    "zh": "最好的宿舍"
+  "subtitles": {
+    "en": [
+      "The Best Dormitory"
+    ],
+    "zh": [
+      "是您在美国的朋友，老师和亲",
+      "为您美国的学习，生活护航",
+      "这您在养恩学习，工作，定居提状今"
+    ]
   },
   "actionBtnText": {
     "en": "Apply Now",
@@ -14,11 +20,11 @@
   "whoWeAre": {
     "title": {
       "en": "Who we are",
-      "zh": "我们是谁"
+      "zh": "我们的使命"
     },
     "text": {
       "en": "The Student Transit Assist Center (known as STAC) is located in San Jose, in the heart of Silicon Valley, California. We are dedicated to serving international students attending schools in this region. We firmly believe that success comes from professional and comprehensive service. Currently, our center has established long-term strategic partnerships with a number of renowned educational institutions in the United States and well-known study abroad agencies in China. Based on a thorough review of our past services, we are committed to creating a more efficient, effective, and comprehensive one-stop service for studying in the U.S. We provide a range of services to support students' transitions, including housing assistance, student supervision and management, academic advising, tutoring, and more. However, we are not an agency and do not provide agency services. Our 24/7 services assist students in case of emergencies, ensuring a smooth transition to school and dorm life.",
-      "zh": "留学不仅是在学校求学，学生也要在日常生活中学习到各种不同文化及知识。但是中美文化的差异，生活方式的不同，留学生活中必然会有各种问题的出现。对于初来乍到的学生们需要帮手来协调生活琐事，避免生活琐事的打扰帮助学生适应美国生活环境的差异，更快的融入其中。斯坦科留学管理服务中心 是您在美国的朋友,老师和亲人 为您美国的学习，生活护航 为您在美国学习，工作，定居提供咨询 留学不仅是在学校求学，学生也要在日常生活中学习到各种不同文化及知识。但是中美文化的差异，生活方式的不同，留学生活中必然会有各种问题的出现。对于初来乍到的学生们需要帮手来协调生活琐事，避免生活琐事的打扰帮助学生适应美国生活环境的差异，更快的融入其中。 斯坦科留学管理中心就是您最贴心的留学助手。 我们立足加州硅谷，拥有经验丰富团队，为每个学生量身定做最适合的美国留学计划，提供优质的留学生活辅导，为您美国的学习，生活护航。"
+      "zh": "留学不仅是在学校求学，学生也要在日常生活中学习到各种不同文化及知识。但是中美文化的差异，生活方式的不同，留学生活中必然会有各种问题的出现。对于初来乍到的学生们需要帮手来协调生活琐事，避免生活琐事的打扰帮助学生适应美国生活环境的差异，更快的融入其中。 斯坦科留学管理中心就是您最贴心的留学助手。 我们立足加州硅谷，拥有经验丰富团队，为每个学生量身定做最适合的美国留学计划，提供优质的留学生活辅导，为您美国的学习，生活护航。"
     }
   },
   "location": {

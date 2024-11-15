@@ -4,12 +4,12 @@ import { useRouter } from "next/navigation";
 
 export function HeroImageRight({
   title,
-  subtitle,
+  subtitles,
   actionBtnText,
   locale,
 }: {
   title: string;
-  subtitle: string;
+  subtitles: string[];
   actionBtnText: string;
   locale: string;
 }) {
@@ -22,16 +22,18 @@ export function HeroImageRight({
             <Title className={classes.title} c={"white"}>
               {title}{" "}
             </Title>
-            <Title className={classes.title}>
-              <Text
-                component="span"
-                inherit
-                variant="gradient"
-                gradient={{ from: "pink", to: "yellow" }}
-              >
-                {subtitle}
-              </Text>
-            </Title>
+            {subtitles.map((subtitle, index) => (
+              <Title className={classes.title} key={index}>
+                <Text
+                  component="span"
+                  inherit
+                  variant="gradient"
+                  gradient={{ from: "pink", to: "yellow" }}
+                >
+                  {subtitle}
+                </Text>
+              </Title>
+            ))}
             <Button
               variant="gradient"
               gradient={{ from: "pink", to: "yellow" }}

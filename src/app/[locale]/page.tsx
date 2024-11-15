@@ -65,7 +65,7 @@ export default function Page({ params: { locale } }: PageProps) {
     <Stack gap={0}>
       <HeroImageRight
         title={t.get(data.title)}
-        subtitle={t.get(data.subtitle)}
+        subtitles={t.get(data.subtitles)}
         actionBtnText={t.get(data.actionBtnText)}
         locale={locale}
       />
