@@ -8,9 +8,9 @@
       "The Best Dormitory"
     ],
     "zh": [
-      "是您在美国的朋友，老师和亲",
+      "是您在美国的朋友，老师和亲人",
       "为您美国的学习，生活护航",
-      "这您在养恩学习，工作，定居提状今"
+      "为您在美国学习，工作，定居提供咨询"
     ]
   },
   "actionBtnText": {
@@ -50,7 +50,6 @@
   "luxuries": {
     "en": [
       "Free public Wi-Fi",
-      "Monthly reports can be requested by parents",
       "Fully furnished",
       "Kitchen, dining room, and laundry facilities are communal",
       "Own Refrigerator",
@@ -63,7 +62,7 @@
   },
   "roomTypes": {
     "title": {
-      "en": "Room types",
+      "en": "Model Rooms",
       "zh": "样板间"
     },
     "subtitle": {
@@ -118,8 +117,8 @@
       "zh": "欢迎合作"
     },
     "text": {
-      "en": "STAC Apartments are the officially recommended dormitories for DeAnza College. We provide the most convenient and professional service experience for our partners. With 24/7 service and security monitoring, we significantly reduce the service load on partners for your students after arriving in the U.S. Welcome to all educational agencies and institutions for collaboration. We aim to become your long-term partner in providing services for your students.",
-      "zh": "斯坦科留学管理中心公寓是DeAnza学院官方推荐的学生公寓。我们一向坚信成功源于专业与完善的服务。现阶段斯坦科留学管理中心已同一批美国知名高校，中国知名留学机构建立了长期合作战略伙伴关系。斯坦科留学管理中心在全面总结过去的服务基础上，全力打造更到位，更高效率，更完善的专业化一站式留学服务。斯坦科留学管理服务中心欢迎国内外留学机构，高校与我们联系建立合作关系。成为你们美国留学生客户接待, 管理, 服务的长期合作伙伴。通过24/7全天候服务和安全监控，我们减轻了学生客户抵达美国后留学机构的服务负担。我们致力于为您和学生提供服务并成为长期合作伙伴。欢迎所有留学机构和院校前来合作。"
+      "en": "STAC Center serves the entire Silicon Valley area and is the officially recommended dormitory provider for local colleges. We offer the most convenient and professional service experience for our partners. With 24/7 service and security monitoring, we significantly reduce the service burden on partners for your students once they arrive in the U.S. We welcome collaboration with all educational agencies and institutions. Our goal is to become your long-term partner in providing top-quality services for your students.",
+      "zh": "斯坦科留学管理中心公寓是加州硅谷当地大学官方推荐的学生公寓。我们一向坚信成功源于专业与完善的服务。现阶段斯坦科留学管理中心已同一批美国知名高校，中国知名留学机构建立了长期合作战略伙伴关系。斯坦科留学管理中心在全面总结过去的服务基础上，全力打造更到位，更高效率，更完善的专业化一站式留学服务。斯坦科留学管理服务中心欢迎国内外留学机构，高校与我们联系建立合作关系。成为你们美国留学生客户接待, 管理, 服务的长期合作伙伴。通过24/7全天候服务和安全监控，我们减轻了学生客户抵达美国后留学机构或学校的服务负担。我们致力于为您和学生提供服务并成为长期合作伙伴。欢迎所有留学机构和院校前来合作。"
     }
   }
 }
