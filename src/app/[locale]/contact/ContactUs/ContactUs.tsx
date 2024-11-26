@@ -48,7 +48,7 @@ export function ContactUs({ locale }: { locale: string }) {
       email: email,
     };
     const url =
-      "https://script.google.com/macros/s/AKfycbwwqOGah0t6M5vPT3YLCbInjRaVYGGy6UYERyw0rSUcFGAyZ0YqBmjwXReG37CfwD2B6A/exec";
+      "https://script.google.com/macros/s/AKfycby6lNwN4fZcZEhu6fGGmXF2QnBkWZh3Aj_YaWR8hv5hZ3NM7lABxbd5rBmNMrtVe9ZyVA/exec";
     var xhr = new XMLHttpRequest();
     xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
