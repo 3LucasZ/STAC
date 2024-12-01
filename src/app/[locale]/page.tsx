@@ -121,7 +121,7 @@ export default function Page({ params: { locale } }: PageProps) {
             h="auto"
             // style={{ overflow: "hidden" }}
           >
-            {/* <Image360 url="/images/360-interior.jpg" /> */}
+            <Image360 url="/images/360-interior.jpg" />
             <AspectRatio ratio={16 / 9}>
               <iframe
                 src="/images/sweep-interior.mp4"
