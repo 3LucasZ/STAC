@@ -24,6 +24,8 @@ export default function Image360(props: Props) {
     <Canvas camera={{ position: [0, 0, 0.1] }}>
       <OrbitControls
         enableZoom={false}
+        minAzimuthAngle={-0.5}
+        maxAzimuthAngle={1.5}
         enablePan={false}
         enableDamping
         dampingFactor={0.2}
@@ -48,7 +50,7 @@ export default function Image360(props: Props) {
         overflow: "hidden",
       })}
     >
-      <Box pos={"absolute"} right={15} top={15} style={{ zIndex: 100 }}>
+      <Box pos={"absolute"} right={15} top={15} style={{ zIndex: 10 }}>
         <ActionIcon
           variant="gradient"
           size="xl"
@@ -61,7 +63,7 @@ export default function Image360(props: Props) {
           {opened ? <IconArrowsDiagonalMinimize /> : <IconArrowsDiagonal />}
         </ActionIcon>
       </Box>
-      <AspectRatio ratio={1080 / 720}>{component}</AspectRatio>
+      <AspectRatio ratio={16 / 9}>{component}</AspectRatio>
     </Box>
   );
 

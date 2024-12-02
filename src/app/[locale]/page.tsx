@@ -122,7 +122,8 @@ export default function Page({ params: { locale } }: PageProps) {
             // style={{ overflow: "hidden" }}
           >
             <Image360 url="/images/360-interior.jpg" />
-            <AspectRatio ratio={16 / 9}>
+            {/* <Image360 url="/images/360-interior2.png" /> */}
+            {/* <AspectRatio ratio={16 / 9}>
               <iframe
                 src="/images/sweep-interior.mp4"
                 title="Video player"
@@ -130,7 +131,7 @@ export default function Page({ params: { locale } }: PageProps) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               />
-            </AspectRatio>
+            </AspectRatio> */}
           </Box>
 
           <Title c={"yellow"} ta={"center"}>
