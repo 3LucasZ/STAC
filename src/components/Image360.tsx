@@ -33,7 +33,7 @@ export default function Image360(props: Props) {
   texture.generateMipmaps = false;
   texture.minFilter = LinearFilter;
   const component = (
-    <Canvas camera={{ position: [0, 0, 0.1], zoom: 0.75 }}>
+    <Canvas camera={{ position: [0, 0, 0.1], zoom: 0.9 }}>
       <OrbitControls
         minAzimuthAngle={-1}
         maxAzimuthAngle={1.5}
