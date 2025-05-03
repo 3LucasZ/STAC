@@ -76,6 +76,16 @@
     },
     {
       "q": {
+        "en": "What happens if I want to move out of the STAC Center before the lease ends?",
+        "zh": "如果我想在租约结束前搬出，会有什么后果？"
+      },
+      "a": {
+        "en": "If you move out before the lease ends, it will be considered a breach of contract. As a result, the remaining rent and deposit will be forfeited.",
+        "zh": "提前搬出将被视为违反合约。根据租赁协议,可能会导致剩余租金和押金无法退还。"
+      }
+    },
+    {
+      "q": {
         "en": "What should I do if my lease cannot be renewed due to the  unavailability of the room and other reasons?",
         "zh": "如果由于没有空房间或其他原因无法续租，我该怎么办？"
       },
