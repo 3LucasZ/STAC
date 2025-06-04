@@ -17,8 +17,9 @@ type Props = {
 };
 
 export const metadata = {
-  title: "Student Transit Assist Center",
-  description: "Student Apartments",
+  title: "STAC Center",
+  description:
+    "Affordable student apartments near De Anza College in Cupertino, with modern amenities, study spaces, and easy campus access.",
 };
 
 //function to generate the routes for all the locales
