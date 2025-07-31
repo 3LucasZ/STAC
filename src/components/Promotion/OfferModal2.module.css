@@ -1,0 +1,52 @@
+/* components/OfferModal2.module.css */
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animatedBorder {
+  position: relative;
+  /* This padding controls the thickness of the border */
+  padding: 2px;
+  /* Match the radius from your Modal component prop */
+  border-radius: var(--mantine-radius-lg);
+  overflow: hidden;
+  background: var(--mantine-color-body);
+}
+
+.animatedBorder::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+
+  background-image: conic-gradient(
+    from 180deg,
+    #007bff,
+    #339af0,
+    #845ef7,
+    #e03131,
+    #f76707,
+    #fab005,
+    #51cf66,
+    #12b886,
+    #007bff
+  );
+
+  animation: rotate 4s linear infinite;
+}
+
+.innerContent {
+  background: var(--mantine-color-body);
+  padding: var(--mantine-spacing-xl);
+  /* The inner radius should be slightly smaller to fit inside the border */
+  border-radius: calc(var(--mantine-radius-lg) - 2px);
+}

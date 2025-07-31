@@ -18,6 +18,8 @@ import data from "./data.json";
 import { Translator } from "@/utils";
 import dynamic from "next/dynamic";
 import { Room } from "@/components/Room/Room";
+import { OfferModal } from "@/components/Promotion/OfferModal";
+import { OfferModal2 } from "@/components/Promotion/OfferModal2";
 const Image360 = dynamic(
   () => import("@/components/Image360").then((mod) => mod.default),
   {
@@ -156,6 +158,8 @@ export default function Page({ params: { locale } }: PageProps) {
           </SimpleGrid>
         </Stack>
       </Container>
+      {/* <OfferModal /> */}
+      <OfferModal2 />
     </Stack>
   );
 }
