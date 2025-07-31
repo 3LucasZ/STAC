@@ -10,6 +10,7 @@ import { Notifications } from "@mantine/notifications";
 import { notFound } from "next/navigation";
 import { ReactNode } from "react";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { OfferBanner } from "@/components/Promotion/OfferBanner";
 
 type Props = {
   children: ReactNode;
@@ -44,6 +45,7 @@ export default async function RootLayout({
         <MantineProvider>
           <Notifications />
           <Layout locale={locale}>{children}</Layout>
+          <OfferBanner locale={locale} />
         </MantineProvider>
         <GoogleAnalytics gaId="G-HMXZF1HKM6" />
       </body>

@@ -1,0 +1,136 @@
+/* components/OfferBanner.module.css */
+
+/* Wrapper to position the icon and its sparkles */
+.iconWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+/* The class for the subtle shaking icon */
+.animatedIcon {
+  display: inline-block;
+  animation: shake-subtle 1s ease-in-out 2.5s infinite;
+  transform-origin: center center;
+}
+
+@keyframes shake-subtle {
+  10%,
+  90% {
+    transform: rotate(-1deg);
+  }
+  20%,
+  80% {
+    transform: rotate(1.5deg);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-1px, 0, 0) rotate(-1.5deg);
+  }
+  40%,
+  60% {
+    transform: translate3d(1px, 0, 0) rotate(1.5deg);
+  }
+}
+
+/* Base style for all stars */
+.star {
+  /* content: "✦"; <--- FIX: This line has been removed. */
+  position: absolute;
+  color: #ffc107;
+  font-weight: bold;
+  opacity: 0;
+  animation: sparkle 2s ease-in-out infinite;
+  pointer-events: none;
+  user-select: none;
+}
+
+/* Individual star variations for a random effect */
+.star1 {
+  top: -5px;
+  left: 90%;
+  font-size: 10px;
+  animation-duration: 2.3s;
+  animation-delay: 0.7s;
+}
+
+.star2 {
+  top: 80%;
+  left: 0px;
+  font-size: 7px;
+  animation-duration: 2.1s;
+  animation-delay: 0.9s;
+}
+
+.star3 {
+  top: 0;
+  left: -5px;
+  font-size: 9px;
+  animation-duration: 1.9s;
+  animation-delay: 1.1s;
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  75% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+/* --- New Animated Border Styles --- */
+
+/* This class will be applied to the banner's root element */
+.animatedBorderBanner {
+  position: relative !important;
+  overflow: hidden;
+  border-bottom: none !important;
+  /* Add this line to control the corners */
+  border-radius: 15px 15px 0px 0px;
+}
+
+/* The pseudo-element that creates the moving line */
+.animatedBorderBanner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* The thickness of our animated "border" */
+
+  /* The gradient that will sweep across */
+  background: linear-gradient(
+    90deg,
+    rgba(0, 123, 255, 0),
+    /* transparent blue */ rgba(255, 255, 255, 0.8),
+    /* bright white/silver */ rgba(0, 123, 255, 0) /* transparent blue */
+  );
+
+  /* Make the background gradient wider than the element */
+  background-size: 50% 100%;
+
+  /* Apply the animation */
+  animation: moveGradient 4s linear infinite;
+}
+
+/* The keyframes that move the background gradient */
+@keyframes moveGradient {
+  0% {
+    background-position: -200% 0; /* Start far to the left */
+  }
+  100% {
+    background-position: 200% 0; /* End far to the right */
+  }
+}
