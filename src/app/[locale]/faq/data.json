@@ -26,6 +26,16 @@
     },
     {
       "q": {
+        "en": "Can a third party, such as a friend or relative, serve as the legal guardian for a minor student?",
+        "zh": "第三方（如朋友或亲戚）可以作为未成年学生的法定监护人吗？"
+      },
+      "a": {
+        "en": "Yes, but the guardian you designate must meet the requirements set by Stac Center. Please contact Stac Center for detailed information regarding the qualifications and necessary forms.",
+        "zh": "可以，但您指定的监护人必须符合 Stac Center 的相关要求。请联系 Stac Center 以获取详细的资格说明及所需表格。"
+      }
+    },
+    {
+      "q": {
         "en": "What should I prepare for moving in?",
         "zh": "我需要为入住准备什么？"
       },
