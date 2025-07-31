@@ -43,12 +43,20 @@
         "en": "(Download here)",
         "zh": "（在此下载）"
       },
+      "title": {
+        "en": "Credit Card Authorization Form",
+        "zh": "信用卡授权书"
+      },
       "href": "credit.pdf"
     },
     {
       "link": {
         "en": "(Download here)",
         "zh": "（在此下载）"
+      },
+      "title": {
+        "en": "Credit Card Authorization Form (under 18)",
+        "zh": "信用卡授权书 (未满十八岁)"
       },
       "href": "credit18.pdf"
     },
@@ -57,12 +65,20 @@
         "en": "(Download here)",
         "zh": "（在此下载）"
       },
+      "title": {
+        "en": "Application Form",
+        "zh": "申请表"
+      },
       "href": "main.pdf"
     },
     {
       "link": {
         "en": "(Download here)",
         "zh": "（在此下载）"
+      },
+      "title": {
+        "en": "Parental Release Form",
+        "zh": "未成年人家长授权书"
       },
       "href": "release.pdf"
     }

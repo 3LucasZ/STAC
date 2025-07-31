@@ -10,10 +10,12 @@ import {
   Anchor,
   Group,
   SimpleGrid,
+  Box,
 } from "@mantine/core";
 import data from "./data.json";
 import { Translator } from "@/utils";
 import { Carousel } from "@mantine/carousel";
+import { PDF } from "@/components/PDF/pdf";
 export default function Home({
   params: { locale },
 }: {
@@ -21,14 +23,12 @@ export default function Home({
 }) {
   const t = new Translator(locale);
   const forms = data.forms.map((form, index) => (
-    <Anchor
-      size="xl"
-      href={"/forms/" + locale + "/" + form.href}
-      target="_blank"
-      key={index}
-    >
-      {t.get(form.link)}
-    </Anchor>
+    <Box mt={8}>
+      <PDF
+        title={t.get(form.title)}
+        href={"/forms/" + locale + "/" + form.href}
+      />
+    </Box>
   ));
 
   const checklist = data.checklist.map((item, index) => (
@@ -65,7 +65,9 @@ export default function Home({
         <Title order={3} c={"blue"}>
           {t.get(data.title2)}
         </Title>
-        <List>{checklist}</List>
+        <List spacing={24} type="ordered">
+          {checklist}
+        </List>
 
         <Title ta="center" py={20} c={"blue"}>
           {t.get(data.floorPlan.title)}

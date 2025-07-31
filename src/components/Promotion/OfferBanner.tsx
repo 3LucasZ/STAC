@@ -57,13 +57,13 @@ export function OfferBanner({ locale }: { locale: string }) {
           >
             <Text>
               {t.get(data.b)}
-              <Button
+              {/* <Button
                 color="indigo"
                 mx={16}
                 onClick={() => router.push("/" + locale + "/apply")}
               >
                 {t.get(data.c)}
-              </Button>
+              </Button> */}
             </Text>
           </Alert>
         )}
