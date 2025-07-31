@@ -23,7 +23,7 @@ export default function Home({
 }) {
   const t = new Translator(locale);
   const forms = data.forms.map((form, index) => (
-    <Box mt={8}>
+    <Box mt={8} key={index}>
       <PDF
         title={t.get(form.title)}
         href={"/forms/" + locale + "/" + form.href}
