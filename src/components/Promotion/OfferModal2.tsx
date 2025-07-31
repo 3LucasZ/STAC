@@ -83,7 +83,7 @@ export function OfferModal2() {
             radius="md"
             onClick={() => {
               // Add your navigation or action logic here
-              alert("Redirecting to available units...");
+              // alert("Redirecting to available units...");
               close();
             }}
           >
