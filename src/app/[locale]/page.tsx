@@ -159,7 +159,7 @@ export default function Page({ params: { locale } }: PageProps) {
         </Stack>
       </Container>
       {/* <OfferModal /> */}
-      <OfferModal2 />
+      {/* <OfferModal2 /> */}
     </Stack>
   );
 }

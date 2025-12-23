@@ -45,7 +45,7 @@ export default async function RootLayout({
         <MantineProvider>
           <Notifications />
           <Layout locale={locale}>{children}</Layout>
-          <OfferBanner locale={locale} />
+          {/* <OfferBanner locale={locale} /> */}
         </MantineProvider>
         <GoogleAnalytics gaId="G-HMXZF1HKM6" />
       </body>
